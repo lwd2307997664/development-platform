@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.yangxf</groupId>
+    <artifactId>development-platform</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>业务开发服务平台</name>
+    <description>业务开发服务平台</description>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.0.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <!-- 项目子模块 -->
+    <modules>
+        <module>development-platform-core</module>
+        <module>development-platform-admin</module>
+        <module>development-platform-app-study</module>
+        <module>development-platform-auth</module>
+    </modules>
+
+    <!-- 版本定义，配置到父项目里，是为了方便维护管理，子项目仅仅配置 groupId 和 artifactId 就可以了 -->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <development-platform-core.version>1.0-SNAPSHOT</development-platform-core.version>
+        <!--项目版本定义 -->
+        <java.version>1.8</java.version>
+        <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+        <ojdbc.version>12.1.0.1.0</ojdbc.version>
+        <mysql.version>8.0.14</mysql.version>
+        <commons-io.version>2.4</commons-io.version>
+        <!--报表 -->
+        <barbecue.version>1.5-beta1</barbecue.version>
+        <!-- 测试支持 -->
+        <jsonpath.version>0.9.1</jsonpath.version>
+        <log4jdbc.version>1.15</log4jdbc.version>
+        <!-- restful错误框架 -->
+        <rest-exception.version>1.2.0</rest-exception.version>
+        <!-- jasperreports -->
+        <jasperreports.version>5.5.0</jasperreports.version>
+        <itext.version>2.1.7</itext.version>
+        <itextpdf.version>5.4.0</itextpdf.version>
+        <xmlworker.version>1.2.1</xmlworker.version>
+        <itext-asian.version>5.2.0</itext-asian.version>
+        <!-- excel导出/文件上传 -->
+        <poi.version>3.9</poi.version>
+        <!-- api文档支持 -->
+        <io.springfox.verson>2.6.0</io.springfox.verson>
+        <!-- fastdfs 版本 -->
+        <fastjson.version>1.2.62</fastjson.version>
+        <lombok.version>1.16.22</lombok.version>
+    </properties>
+
+    <!-- 项目依赖定义 -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- 与平台集成 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-parent</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- 项目本地化配置 -->
+            <!-- ======= Begin Neusoft Apply Core FrameWork ========= -->
+            <!-- 核心业务框架 -->
+            <dependency>
+                <groupId>com.yangxf</groupId>
+                <artifactId>development-platform-core</artifactId>
+                <version>${development-platform-core.version}</version>
+            </dependency>
+            <!--  Barbecue是一个Java开源类库用于创建遵循各种标准格式的条形码。当前Barbecue能够输出三种图片格式PNG,GIF,JPEG-->
+            <dependency>
+                <groupId>net.sourceforge.barbecue</groupId>
+                <artifactId>barbecue</artifactId>
+                <version>${barbecue.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <!-- ============数据库支持=========== -->
+            <!-- Oracle -->
+            <dependency>
+                <groupId>com.oracle</groupId>
+                <artifactId>ojdbc6</artifactId>
+                <version>${ojdbc.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <!-- mysql -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <!-- ======== commons UTILS ======== -->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io.version}</version>
+            </dependency>
+            <!-- ============文档支持=========== -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${io.springfox.verson}</version>
+            </dependency>
+            <!-- ============Restful统一错误框架支持=========== -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <optional>true</optional>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <!-- ======== excel解析支持 begin ======== -->
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml-schemas</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+            <!-- ======== excel解析支持 end ======== -->
+        </dependencies>
+    </dependencyManagement>
+
+</project>
