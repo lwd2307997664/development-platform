@@ -9,14 +9,20 @@
  */
 package com.yangxf.si;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈学习应用启动文件〉
  *
- * @author Administrator
+ * @author lin.wd
  * @create 2020/3/6
  * @since 1.0.0
  */
+@SpringBootApplication
 public class SiStudyApplication {
-
+    public static void main(String[] args) {
+        SpringApplication.run(SiStudyApplication.class, args);
+    }
 }

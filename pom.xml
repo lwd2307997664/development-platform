@@ -22,14 +22,14 @@
     <!-- 项目子模块 -->
     <modules>
         <module>development-platform-core</module>
-        <module>development-platform-admin</module>
         <module>development-platform-app-study</module>
-        <module>development-platform-auth</module>
     </modules>
 
     <!-- 版本定义，配置到父项目里，是为了方便维护管理，子项目仅仅配置 groupId 和 artifactId 就可以了 -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
         <development-platform-core.version>1.0-SNAPSHOT</development-platform-core.version>
         <!--项目版本定义 -->
         <java.version>1.8</java.version>
@@ -57,6 +57,9 @@
         <!-- fastdfs 版本 -->
         <fastjson.version>1.2.62</fastjson.version>
         <lombok.version>1.16.22</lombok.version>
+        <druid.version>1.1.9</druid.version>
+        <mybatis.version>1.3.2</mybatis.version>
+        <redis.version>2.4.2</redis.version>
     </properties>
 
     <!-- 项目依赖定义 -->
@@ -85,6 +88,18 @@
                 <version>${barbecue.version}</version>
                 <scope>runtime</scope>
             </dependency>
+            <!-- alibaba的druid数据库连接池 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
             <!-- ============数据库支持=========== -->
             <!-- Oracle -->
             <dependency>
@@ -99,6 +114,12 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
                 <scope>runtime</scope>
+            </dependency>
+            <!--spring2.0集成redis所需common-pool2-->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-pool2</artifactId>
+                <version>${redis.version}</version>
             </dependency>
             <!-- ======== commons UTILS ======== -->
             <dependency>
