@@ -15,14 +15,15 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.0.RELEASE</version>
+        <version>2.1.7.RELEASE</version>
         <relativePath/>
     </parent>
 
     <!-- 项目子模块 -->
     <modules>
         <module>development-platform-core</module>
-        <module>development-platform-app-study</module>
+        <module>development-platform-study-app</module>
+        <module>development-platform-study-ui</module>
     </modules>
 
     <!-- 版本定义，配置到父项目里，是为了方便维护管理，子项目仅仅配置 groupId 和 artifactId 就可以了 -->
@@ -33,6 +34,7 @@
         <development-platform-core.version>1.0-SNAPSHOT</development-platform-core.version>
         <!--项目版本定义 -->
         <java.version>1.8</java.version>
+<!--        <spring.version>5.1.8</spring.version>-->
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
         <ojdbc.version>12.1.0.1.0</ojdbc.version>
         <mysql.version>8.0.14</mysql.version>

@@ -1,0 +1,167 @@
+<div ng-controller="ApplyDataDetailCtrl" ng-init="onlyRead()">
+    <div class="modal-header">
+        <table style="width: 100%">
+            <tr>
+                <td align="left"><h4>{{modalOptions.headerText}}</h4></td>
+                <td align="right">
+                    <button class="glyphicon glyphicon-remove btn-primary" name="closeBtn"
+                            style="width: 18px;height:18px;border:0"
+                            data-ng-click="modalOptions.close();">
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="modal-body" id="detailContent" name="detailContent">
+        <div class="menumap">
+            <form name="infoForm" class="form-horizontal formCustomSetting normalForm" style="width: 100%;height:400px">
+                <div class="panel panel-default mar_t20p">
+                    <div class="panel-heading">
+                        <span class="title1">申报者信息</span>
+                    </div>
+                    <div class="panel-body-box mar_t5p form-view">
+                        <div class=" form-group">
+                            <div class="col-md-2">
+                                <label>单位名称：</label>
+                            </div>
+                            <div class="col-md-5">
+                                <span ng-bind="apply.applyEvent.rName"></span>
+                            </div>
+                            <div class="col-md-2">
+                                <label>内部单位编号：</label>
+                            </div>
+                            <div class="col-md-3">
+                                <span ng-bind="apply.applyEvent.rGroup"></span>
+                            </div>
+                        </div>
+
+                        <div class=" form-group" style="margin-bottom: 4px;">
+                            <div class="col-md-2">
+                                <label>申报人信息：</label>
+                            </div>
+                            <div class="col-md-5">
+                                <span ng-bind="apply.applyEvent.rOperator"></span>
+                            </div>
+                            <div class="col-md-2 ">
+                                <label>申报提交时间：</label>
+                            </div>
+                            <div class="col-md-3">
+                                <span ng-bind="apply.submitDate| SecondLongToDateFilter"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-heading mar_t15p">
+                        <span class="title1">申报对象信息</span>
+                    </div>
+                    <div class="panel-body-box mar_t5p" ng-show="apply.applyEvent.aPartyType==='1'">
+                        <div class=" form-group">
+                            <div class="col-md-1">
+                                <label>姓名</label>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" ng-model="apply.applyEvent.aName" readonly/>
+                            </div>
+                            <div class="col-md-1">
+                                <label>性别</label>
+                            </div>
+                            <div class="col-md-2">
+                                <select name="aSex" ng-model="apply.applyEvent.aSex" disabled
+                                        ng-options="m.value as  m.name for m in codeList|selectCodeType:'AAC004'"
+                                        class="form-control">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-1">
+                                <label>证件号码</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" ng-model="apply.applyEvent.aIdNumber" readonly/>
+                            </div>
+                        </div>
+                        <div class=" form-group">
+
+                            <div class="col-md-1">
+                                <label>办理业务</label>
+                            </div>
+                            <div class="col-md-2">
+                                <select name="aSex" ng-model="apply.applyType" disabled
+                                        ng-options="m.value as  m.name for m in codeList|selectCodeType:'APPLY_TYPE'"
+                                        class="form-control">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-1">
+                                <label>办理事项</label>
+                            </div>
+                            <div class="col-md-8">
+                                <select name="aSex" ng-model="apply.matter" disabled
+                                        ng-options="m.value as  m.name for m in codeList|selectCodeType:'MATTER_NAME'"
+                                        class="form-control">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body-box mar_t5p" ng-show="apply.applyEvent.aPartyType!=='1'">
+                        <div class=" form-group">
+                            <div class="col-md-1">
+                                <label>单位编号</label>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" ng-model="apply.applyEvent.aNumber" readonly/>
+                            </div>
+                            <div class="col-md-1">
+                                <label>单位名称</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" ng-model="apply.applyEvent.aName" readonly/>
+                            </div>
+                        </div>
+                        <div class=" form-group">
+
+                            <div class="col-md-1">
+                                <label>办理业务</label>
+                            </div>
+                            <div class="col-md-2">
+                                <select name="aSex" ng-model="apply.applyType" disabled
+                                        ng-options="m.value as  m.name for m in codeList|selectCodeType:'APPLY_TYPE'"
+                                        class="form-control">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-1">
+                                <label>办理事项</label>
+                            </div>
+                            <div class="col-md-8">
+                                <select name="aSex" ng-model="apply.matter" disabled
+                                        ng-options="m.value as  m.name for m in codeList|selectCodeType:'MATTER_NAME'"
+                                        class="form-control">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-heading mar_t15p">
+                        <span class="title1">申报明细材料</span>
+                    </div>
+                    <div class="panel-body-box mar_t5p">
+                        <!--ng-show="apply.applyEvent.aPartyType==='1'"-->
+                        <div class=" form-group">
+                            <div class="text_r">
+                                <dossier apply-data="applyData" matter="matter" read-only="true"></dossier>
+                                <receipt class="float_right" apply-data="applyData" type="apply"></receipt>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer" data-ng-show="modalOptions.submitted">
+        <div class="row">
+
+        </div>
+    </div>
+</div>

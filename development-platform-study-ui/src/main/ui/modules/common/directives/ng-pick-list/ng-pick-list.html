@@ -1,0 +1,31 @@
+<div class="col-md-5">
+    <div class="pick-header">
+        <span class="glyphicon glyphicon-triangle-right pick-header-icon" aria-hidden="true"></span>
+        <span class="pick-header-span" >待分配人员</span>
+    </div>
+    <div style="width: 100%; height: 400px;" ui-grid="groupGridLeft" class="grid" enhence-ui-grid
+         ui-grid-resize-columns ui-grid-selection ui-grid-pagination ui-grid-edit ui-grid-cellnav></div>
+    <div class="col-md-12 mar_t10p ">
+        <input type="text" class="form-control"
+               ng-model="filter.filterValue" ng-blur="filter()" placeholder="过滤条件:姓名/证件号码"/>
+    </div>
+</div>
+<div class="col-md-2">
+    <div class="pick-direction-box" ng-if="isDisabled">
+        <button type="button" ng-click="move('left')" class="pick-direction pick-direction-left">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+        </button>
+
+        <button type="button" ng-click="move('right')" class="pick-direction pick-direction-right">
+            <span class="glyphicon glyphicon-menu-right"  aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+<div class="col-md-5">
+    <div class="pick-header">
+        <span class="glyphicon glyphicon-triangle-right pick-header-icon" aria-hidden="true"></span>
+        <span class="pick-header-span">已分配人员</span>
+    </div>
+    <div style="width: 100%; height: 400px" ui-grid="groupGridRight" class="grid" enhence-ui-grid
+         ui-grid-resize-columns ui-grid-selection ui-grid-pagination ui-grid-edit ui-grid-cellnav></div>
+</div>

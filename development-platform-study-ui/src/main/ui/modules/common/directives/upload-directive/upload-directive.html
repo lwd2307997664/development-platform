@@ -1,0 +1,11 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <span class="title">申报电子材料上传</span>
+    </div>
+    <div class="panel-body">
+        <input type="text" class="form-control" ng-model="localAreaCode" select-address data="matterList"
+               col-option="{{colOption}}" has-add=false select-callback="selectCallback(item,names)"/>
+        <apply-dossier archive-data="optionData"></apply-dossier>
+        <img-update-entirety config-data="optionData" save-fun="saveOptionData(obj)"></img-update-entirety>
+    </div>
+</div>

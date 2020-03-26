@@ -1,0 +1,210 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>业务开发服务平台前台-学习</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css({src/main}) styles/vendor.css -->
+    <!-- package:css-->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../node_modules/angular-ui-grid/ui-grid.css"/>
+    <link rel="stylesheet" href="../../node_modules/angular-bootstrap/ui-bootstrap-csp.css"/>
+    <link rel="stylesheet" href="../../node_modules/angular-bootstrap-nav-tree/dist/abn_tree.css"/>
+    <link rel="stylesheet" href="../../node_modules/girder-ui/girder-ui.css"/>
+    <link rel="stylesheet" href="../../node_modules/ui-select/dist/select.css"/>
+    <link rel="stylesheet"
+          href="../../node_modules/angular-bootstrap-toggle-switch/dist/css/bootstrap3/bootstrap-switch.min.css"/>
+    <!-- endpackage -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/common/common.css -->
+    <link rel="stylesheet" href="styles/common/index.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/common/global.css" type="text/css"/>
+    <link rel="stylesheet" href="modules/common/directives/angular-ui-tree/angular-ui-tree.css"/>
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/module/module.css -->
+    <link rel="stylesheet" href="styles/module/styleLogin.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/module/home.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/module/imgUpdate.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/module/sceneBook.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/module/upload.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/module/tree.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/module/cardProgress.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/module/draggable-rows.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/module/manage.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/module/pick-list.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/module/treant.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/module/date-time-picker.css"/>
+    <!-- endbuild -->
+</head>
+<body data-ng-app="HRSSEnterpriseApp" ng-controller="ApplicationController"
+      ng-init="loadApp()">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here-->
+
+<hrss-enterprise-header-box></hrss-enterprise-header-box>
+<!--<hrss-enterprise-main-menu></hrss-enterprise-main-menu>-->
+<company-profile operator="operator" is-home="isHome" user-detail="userDetail"></company-profile>
+<!-- /.navbar -->
+<!--end nav bar -->
+
+<!-- Add your application content here-->
+<!--loading   style="display: none;"-->
+<!--载入等待组件-->
+<div id="spinner" class="loader_container">
+    <div class="loader_img"></div>
+</div>
+<div>
+    <!--主体功能界面-->
+    <div class="slide-animation-container fl" style="width: 100%;">
+        <hrss-enterprise-left-main-menu ng-show="isViewLeft"
+                                        toggle-left="toggleLeft(obj)"></hrss-enterprise-left-main-menu>
+        <left-menu-controller is-expand="isViewLeft" toggle-left="toggleLeft(obj)"></left-menu-controller>
+        <div data-ng-view="" id="ng-view" class="fl slide-animation {{isViewLeft?'ngViewLeft':'ngViewNoLeft'}}"></div>
+    </div>
+    <!--end footer bar-->
+</div>
+<!--弹出消息框-->
+<div id="dialog-message"></div>
+<!-- build:js({src/main}) scripts/vendor.js -->
+<!-- package:js -->
+<script src="../../node_modules/jquery/dist/jquery.js"></script>
+<script src="../../node_modules/angular/angular.js"></script>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../../node_modules/angular-animate/angular-animate.js"></script>
+<script src="../../node_modules/angular-cookies/angular-cookies.js"></script>
+<script src="../../node_modules/angular-resource/angular-resource.js"></script>
+<script src="../../node_modules/angular-route/angular-route.js"></script>
+<script src="../../node_modules/angular-sanitize/angular-sanitize.js"></script>
+<script src="../../node_modules/angular-file-upload/dist/angular-file-upload.min.js"></script>
+<script src="../../node_modules/angular-i18n-cn/angular-locale_zh-cn.js"></script>
+<script src="../../node_modules/angular-ui-grid/ui-grid.js"></script>
+<script src="../../node_modules/angular-ui-mask/dist/mask.js"></script>
+<script src="../../node_modules/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="../../node_modules/angular-bootstrap-nav-tree/dist/abn_tree_directive.js"></script>
+<script src="../../node_modules/girder-ui/girder-ui.js"></script>
+<script src="../../node_modules/girder-ui/girder-ui-tpl.js"></script>
+<script src="../../node_modules/ui-select/dist/select.js"></script>
+<script src="../../node_modules/angular-bootstrap-toggle-switch/dist/js/bootstrap-switch.js"></script>
+<script src="../../node_modules/moment/min/moment.min.js"></script>
+<script src="../../node_modules/jszip/dist/jszip.min.js"></script>
+<script src="../../node_modules/exif-js/exif.js"></script>
+<!-- endpackage -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,src/main/ui}) scripts/scripts.js -->
+<!--应用层配置-->
+<script src="scripts/app.js"></script>
+<script src="scripts/routes.js"></script>
+<script src="scripts/app-controller.js"></script>
+<script src="scripts/getSystemIssueService.js"></script>
+<!--疫情提示-->
+<script src="modules/common/home/directives/yiqing/yiqing.js"></script>
+<!--登录-->
+<script src="modules/common/login/loginController.js"></script>
+<!--首页-->
+<script src="modules/common/home/home-controller.js"></script>
+<script src="modules/common/home/homeService.js"></script>
+<script src="modules/common/home/directives/noticeBoard/noticeBoard.js"></script>
+<script src="modules/common/home/directives/reviewFeedback/reviewFeedback.js"></script>
+<script src="modules/common/home/directives/companyProfile/companyProfile.js"></script>
+<script src="modules/common/home/directives/noticePlacard/noticePlacard.js"></script>
+<script src="modules/common/home/directives/noticePlacard/noticeServie.js"></script>
+<script src="modules/common/home/directives/questionBoard/questionBoard.js"></script>
+<script src="modules/common/home/directives/quickLaunch/quickLaunch.js"></script>
+<script src="modules/common/home/directives/quickLaunch/quickLaunchService.js"></script>
+<script src="modules/common/home/directives/serviceGuide/serviceGuide.js"></script>
+<script src="modules/common/home/directives/updateLog/updateLog.js"></script>
+<script src="modules/common/directives/angular-ui-tree/angular-ui-tree.js"></script>
+<script src="modules/common/directives/ng-pick-list/ng-pick-list.js"></script>
+<script src="modules/common/directives/comCommon/comCommon.js"></script>
+<script src="modules/common/directives/comCommon/comCommonYWTB.js"></script>
+<script src="modules/common/directives/submitapply/submitapplyController.js"></script>
+<script src="modules/common/directives/submitapply/submitapplyService.js"></script>
+<script src="modules/common/directives/date-time-picker/dateTimePicker.js"></script>
+<script src="modules/common/directives/menu/menuController/menu-controller.js"></script>
+<script src="modules/common/directives/gridAutoResize/gridAutoResize.js"></script>
+<!------------------------------------公用组件------------------------------------>
+<!--detail-->
+<script src="modules/common/detail/detail.js"></script>
+<script src="modules/common/detail/apply/detail.js"></script>
+<!--resources-->
+<script src="modules/common/resources/apply-resource-service.js"></script>
+<!--services-->
+<script src="modules/common/services/simisdb/company_service.js"></script>
+<script src="modules/common/services/simisdb/person_service.js"></script>
+<script src="modules/common/services/simisdb/companyForApplyService.js"></script>
+<script src="modules/common/services/simisdb/uiGridColumnService.js"></script>
+
+<!--directives-->
+<script src="modules/common/directives/externalDirective/draggable-rows/draggable-rows.js"></script>
+<script src="modules/common/directives/person_quick_search/person_quick_search.js"></script>
+<script src="modules/common/directives/applylist-directive/apply-list-directive.js"></script>
+<script src="modules/common/directives/file-upload-directive/file-upload-directive.js"></script>
+<script src="modules/common/directives/file-upload-list-directive/file-upload-list-directive.js"></script>
+<script src="modules/common/directives/file-upload-result/file-upload-result-controller.js"></script>
+<script src="modules/common/directives/medical_quick_search/medical_quick_search.js"></script>
+<script src="modules/common/directives/medical_quick_search/medicalService.js"></script>
+<script src="modules/common/directives/menu/top/topmenu.js"></script>
+<script src="modules/common/directives/menu/left/leftmenu.js"></script>
+<script src="modules/common/directives/headerBox/header-box.js"></script>
+<script src="modules/common/directives/headerBox/childCompany/childCompany.js"></script>
+<script src="modules/common/directives/dossierUpdate/imgUpdateEntirety/imgUpdateEntirety.js"></script>
+<script src="modules/common/directives/dossierUpdate/imgUpdateMaterial/imgUpdateMaterial.js"></script>
+<script src="modules/common/directives/dossierUpdate/imgUpdateWidget/imgUpdateWidget.js"></script>
+<script src="modules/common/directives/dossierUpdate/imgUpdateCamera/imgUpdateCamera.js"></script>
+<script src="modules/common/directives/eChartDirective/echarts.js"></script>
+<script src="modules/common/directives/eChartDirective/eChartDirective.js"></script>
+<script src="modules/common/directives/dossier/dossier.js"></script>
+<script src="modules/common/directives/dossier/dossierService.js"></script>
+<script src="modules/common/directives/batch-attachment/batchAttachment.js"></script>
+<script src="modules/common/directives/batch-attachment-search/batch-attachment-search-directive.js"></script>
+<script src="modules/common/directives/receipt/receipt.js"></script>
+<script src="modules/common/directives/receipt/receiptService.js"></script>
+<script src="modules/common/directives/dossierUpdate/imageCompress2/imageCompress2.js"></script>
+<script src="modules/common/directives/dossierUpdate/imageCompress2/imageCompressService.js"></script>
+<!--tree-->
+<script src="modules/common/directives/tree/tree/tree-unit.js"></script>
+<script src="modules/common/directives/tree/tree/tree.js"></script>
+<!--progressSign-->
+<script src="modules/common/directives/progressSign/progressSign.js"></script>
+<script src="modules/common/directives/progressSign/progressItem.js"></script>
+
+<script src="modules/common/directives/admin_region_quick_search/admin_region_quick_search.js"></script>
+<script src="modules/common/directives/admin_region_quick_search/adminService.js"></script>
+
+<script src="modules/common/directives/attach-upload-list-directive/attach-upload-list-directive.js"></script>
+<script src="modules/common/directives/attach-upload-list-directive/attach-upload-list-service.js"></script>
+<!--修改密码-->
+<script src="modules/common/unemp/accountService.js"></script>
+<script src="modules/common/unemp/passwordModify.js"></script>
+<script src="modules/common/unemp/routes.js"></script>
+
+
+<script src="modules/common/directives/tree/treeDemo/treeDemo.js"></script>
+<!--优化图片预览功能-->
+<script src="modules/common/directives/dossierUpdate/hn-image-cropper/image-cropper.js"></script>
+<!--[非常重要]模块定义js申明禁submit/pending止超过这一行&注意不要删除下面的注释标签!-->
+<!-- endbuild -->
+
+<!--开发环境配置文件,不会被构建到正式环境下-->
+<!-- build:DevJs -->
+<script src="debug/onlyForOffLineDebug.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

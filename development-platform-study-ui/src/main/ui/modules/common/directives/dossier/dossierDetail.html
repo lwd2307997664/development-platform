@@ -1,0 +1,34 @@
+<div ng-init="init()">
+    <div class="modal-header">
+        <table style="width: 100%">
+            <tr>
+                <td align="left"><h4 ng-bind="dossierInfo.headerText"></h4></td>
+                <td align="right">
+                    <button class="glyphicon glyphicon-remove btn-primary" name="closeBtn"
+                            style="width: 18px;height:18px;border:0"
+                            data-ng-click="cancel();">
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="modal-body" id="detailContent" name="detailContent">
+        <!--<div class="row">-->
+            <!--<div class="col-md-2 col-md-offset-1">-->
+                <!--<label>确认申报事项:</label>-->
+            <!--</div>-->
+            <!--<div class="col-md-8">-->
+                <!--<input type="text" class="form-control" ng-model="matter" select-address data="matterList"-->
+                       <!--col-option="{{colOption}}" has-add=false select-callback="selectCallback(item,names)"/>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <img-update-entirety config-data="attachmentList" save-fun="saveOptionData()" read-only="readOnly"
+                             ng-if="attachmentList.length>0"></img-update-entirety>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-success" style="width: 180px"  ng-if="!readOnly"
+                id="submitButton" ng-click="update();">确定
+        </button>
+    </div>
+</div>

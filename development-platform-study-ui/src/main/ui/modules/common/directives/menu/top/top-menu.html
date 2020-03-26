@@ -1,0 +1,46 @@
+<div class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div class="logoTitle"></div>
+            <!-- 下面这个部分是为了在小屏幕上显示 -->
+            <button type="button" class="navbar-toggle"
+                    data-toggle="collapse"
+                    data-target="#main-navbar">
+                <!--显示三条线-->
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="main-navbar">
+            <!--操作菜单-->
+            <!--<girder-top-menu></girder-top-menu>-->
+            <ul class="nav navbar-nav">
+                <li ng-repeat="menu in menus" ng-class="{dropdown: menu.children}">
+                    <a ng-class="{'dropdown-toggle': menu.children }" ng-click="navigate(menu.path)">
+                        <span ng-bind="menu.label"></span>
+                        <!--<span ng-if="menu.children.length>0" class="caret"></span>-->
+                        <!--下拉提示-->
+                    </a>
+                    <!--<ul ng-if="menu.children.length>0" class="dropdown-menu">-->
+                        <!--<li ng-repeat="submenu in menu.children" class="{{submenu.label}}">-->
+                            <!--<a ng-if="submenu.label!=='divider'" data-no-click="" data-ng-click="navigate(submenu.path)">{{submenu.label}}</a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                </li>
+            </ul>
+            <!--<button type="button"  class="exitLogin" data-ng-click="quitLogin()">退出</button>-->
+            <!--<ul class="nav navbar-nav" align-right>-->
+                <!--<li ng-class="{dropdown: menu.children}" class="ng-scope">-->
+                    <!--<a data-no-click ng-class="{'dropdown-toggle': menu.children }" data-ng-click="navigate(menu.path)" data-toggle="dropdown">-->
+                        <!--<b><span class="ng-binding" style="color:black">当前单位：{{userDetail.name}}</span></b>-->
+                    <!--</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+    <!-- /.container -->
+</div>

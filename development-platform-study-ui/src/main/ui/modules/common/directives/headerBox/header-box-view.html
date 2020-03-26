@@ -1,0 +1,34 @@
+<div class="header_box">
+    <div class="logo" data-ng-click="goShortcut('/home')"></div>
+
+
+    <button type="button" class="exitLogin" data-ng-click="quitLogin()">退出系统</button>
+    <!--<button type="button" class="username" data-ng-click="quitLogin()">{{userDetail.aab004}}</button>-->
+    <!--<button type="button" class="username" data-ng-click="toggle()">{{userDetail.aab004}}</button>-->
+
+    <!--<div class="messages" data-ng-click="messages()">-->
+    <!--<span class="top-img" style="position: relative;" aria-hidden="true">-->
+    <!--<span class="badge top-badge">{{unreadMessageAmount}}</span>-->
+    <!--</span>-->
+    <!--<span class="top-span">消息</span>-->
+    <!--</div>-->
+    <div ng-if="!virtualAccount" class="messages-toggle" ng-click="changePassword()">
+        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+        <span class="top-span">设置</span>
+    </div>
+    <div class="messages-toggle" ng-click="toggleChildGroup()" ng-if="group.name">
+        <span class="glyphicon glyphicon-record" aria-hidden="true"></span>
+        <span class="top-span" ng-bind="group.name|textLengthSet:true:7:'...'"></span>
+    </div>
+    <div class="messages-toggle" ng-if="operator.name">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        <span class="top-span" ng-bind="operator.name|textLengthSet:true:7:'...'"></span>
+    </div>
+    <!-- Add 测试标识  lizheng -->
+    <div ng-show="isTestFlag" style="color: #eaedf1;">
+        <div ng-class="clssStyle">测试环境</div>
+    </div>
+    <div ng-if="banner.show" class="warn_tip">
+        <marquee class="txt_marquee" onmouseleave="this.start()" onmouseover="this.stop()" ng-attr-title="{{banner.notice}}" ng-bind="banner.notice"></marquee>
+    </div>
+</div>

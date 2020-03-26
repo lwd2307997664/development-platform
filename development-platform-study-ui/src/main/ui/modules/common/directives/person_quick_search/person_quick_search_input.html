@@ -1,0 +1,8 @@
+<div class="input-group">
+    <input type="text" class="form-control" ng-model="idNumber" maxlength="18" placeholder="证件号码"
+           ng-keydown="($event.which === 13)?search(idNumber):''"  ng-blur="search(idNumber)" ng-disabled="!isEnable"/>
+        <span class="input-group-btn" style="z-index: 2;">
+            <button type="button" class="btn btn-default"  ng-disabled="!isEnable" ng-click="showPersonQuickSearch()">
+                <i class="glyphicon glyphicon-search"></i></button>
+        </span>
+</div>

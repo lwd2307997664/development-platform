@@ -1,0 +1,807 @@
+/*
+ * 全局CSS
+ * ------------------------------------------------------------------------------------------------------------
+ * 精简了index与custom，定义全局样式
+ * 包含标准化与差异化两个部分，标准化为所有项目通用。差异化部分可重写标准化部分CSS，或添加不同项目内部通用的CSS。
+ */
+
+/*
+ * 标准化部分
+ * ---------------------
+ * 不建议更改此部分CSS
+ */
+
+/*系统载入进度条loading */
+.loader_container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 4096px;
+    padding: 300px 200px 200px 200px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #606060;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    -moz-opacity: .5;
+    opacity: .5;
+    z-index: 1500;
+}
+
+.loader_container_register {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4096px;
+    padding: 300px 200px 200px 200px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #606060;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    -moz-opacity: .5;
+    opacity: .5;
+    z-index: 1500;
+}
+
+.loader_img {
+    background-image: url("../../images/girder/common/spinning.gif");
+    background-repeat: no-repeat;
+    margin-left: 40%;
+    width: 200px;
+    height: 26px;
+}
+
+.moudle-dis {
+    padding-right: 3%;
+    padding-left: 5px;
+}
+
+.leftNavMenus {
+    padding-left: 3%;
+    padding-right: 0;
+}
+
+/*custom*/
+
+.dropdown-menu {
+
+    background-color: #41A6FB;
+    font-family: '微软雅黑';
+    cursor: pointer;
+
+}
+
+.navbar {
+    min-height: 30px;
+    margin-bottom: 10px;
+}
+
+/*菜单样式重写-----begin*/
+.navbar .nav > li .dropdown-menu {
+    margin: 0;
+}
+
+.navbar .nav > li:hover .dropdown-menu {
+    display: block !important;
+}
+
+.navbar-inverse {
+    border-radius: 0;
+}
+
+.navbar-inverse .navbar-nav li a {
+    font-size: 18px;
+    color: #000;
+    font-family: '微软雅黑';
+    cursor: pointer;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu li a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+    background: #5293e5 !important;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu li a:hover {
+    background: #5293e5 !important;
+}
+
+/*菜单样式重写-----end*/
+/*重写panel样式*/
+.panel {
+    border-radius: 0;
+    padding: 10px 0;
+}
+
+.panel-default {
+    border: 1px solid #e2e6e9;
+}
+
+.panel-default .panel-heading {
+    height: 32px;
+    background-color: #fff;
+    border: 0 none;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 0;
+}
+
+.panel-default .panel-heading .title {
+    float: left;
+    min-width: 150px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background-color: #5fd9dd;
+    color: #fff;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.panel-tips {
+    float: left;
+    color: #181818;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+
+.reportContent {
+    min-height: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #00b3ee;
+    border-top: 3px solid #00b3ee
+}
+
+.pagetitle {
+    height: 35px;
+    border-bottom: 2px solid #1386f1;
+    padding-right: 120px;
+    margin: 20px 0 20px 0;
+    display: block;
+    width: 400px;
+
+}
+
+.pagetitleBegin {
+    line-height: 35px;
+    color: #1386f1;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    margin-right: 20px;
+    display: inline-block;
+    *display: inline;
+    font-weight: bold;
+
+}
+
+.pagetitlenobe {
+    line-height: 35px;
+    color: #323232;
+    font-size: 15px;
+    font-family: "微软雅黑";
+    display: inline-block;
+    *display: inline;
+    font-weight: bold;
+
+}
+
+.input-group-addon {
+    background-color: #66afe9;
+    color: #ffffff;
+
+}
+
+.modal-dialog {
+    margin-top: 200px;
+}
+
+.modal-dialog.modal-lg {
+    margin-top: 100px;
+}
+
+.modal-dialog .modal-header {
+    font-size: 16px;
+    background-color: #1386f1;
+    font-family: '微软雅黑';
+    color: #ffffff;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.modal-dialog .modal-header h3 {
+    margin: 0;
+}
+
+.modal-dialog .modal-header .modal-body {
+    font-family: '微软雅黑';
+
+}
+
+.modal-dialog .modal-body {
+    font-size: 16px;
+}
+
+.modal-dialog .modal-body .menumap {
+    font-size: 14px;
+}
+
+.normalForm label {
+    font-family: "微软雅黑";
+    font-size: 14px;
+    display: block;
+    text-align: right;
+    width: 100%;
+    margin-top: 5px;
+    font-weight: normal
+}
+
+.formCustomSetting .col-md-1 {
+    padding: 0 5px 0 10px;
+}
+
+.formCustomSetting .col-md-2 {
+    padding: 0 10px 0 5px;
+}
+
+.formCustomSetting .col-md-3 {
+    padding: 0 10px 0 5px;
+}
+
+.formCustomSetting .col-md-5 {
+    padding: 0 10px 0 5px;
+}
+
+.formCustomSetting .col-md-8 {
+    padding: 0 10px 0 5px;
+}
+
+.formCustomSetting .col-md-11 {
+    padding: 0 10px 0 5px;
+}
+
+.noticePanHidden {
+    width: 100%;
+    margin-top: 10%;
+
+}
+
+.noticeRightColorBlock {
+    background-color: #F2D587;
+    width: 100px;
+    height: 100px;
+    display: block;
+    color: #FFFFFF;
+    font-size: 32px;
+    text-align: center;
+    line-height: 160px;
+    font-family: "Arial";
+
+}
+
+.noticeRightColorBlockGreen {
+    background-color: #219161;
+    width: 100px;
+    height: 100px;
+    display: block;
+    color: #FFFFFF;
+    font-size: 32px;
+    text-align: center;
+    line-height: 160px;
+    font-family: "Arial";
+
+}
+
+.noticePanHidTitle {
+    height: 50px;
+    border-bottom: 1px solid #969696;
+    text-indent: 50px;
+    font-family: '微软雅黑';
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 28px;
+    line-height: 50px;
+    color: #969696;
+    /*background-image: url(../../images/project/noticeIcon.png);*/
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;;
+
+}
+
+.noticePanDet {
+    height: 45px;
+    margin-left: 15px;
+    margin-top: 5px;
+    line-height: 20px;
+    font-family: '宋体';
+    color: #999999;
+    font-size: 12px;
+
+}
+
+/*
+ * 差异化部分
+ * ---------------------
+ * 在此添加该项目所需的全局CSS
+ */
+/* CSS Document */
+
+.noticePan {
+    width: 350px;
+    height: 320px;
+
+}
+
+.noticeTitle {
+    width: 90%;
+    height: 45px;
+    margin-left: 5%;
+    border-bottom: 2px solid #989898;
+
+}
+
+.titlefont {
+    font-family: "微软雅黑";
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    line-height: 50px;
+    width: 200px;
+    display: inline-block;
+    *display: inline;
+
+}
+
+.moreIcon {
+    padding: 1px 3px;;
+    background-color: #F1F1F1;
+    color: #A4A4A4;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+    *display: inline;
+    float: right;
+    margin-top: 18px;
+    cursor: pointer;
+
+}
+
+.moreIcon:hover {
+    background-color: #42A6FC;
+    color: #ffffff
+}
+
+.contectPan {
+    width: 86%;
+    margin-left: 7%;
+
+}
+
+.noticeItemnobe {
+    color: #3B3D3C;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    line-height: 25px;
+    margin-top: 12px;
+    cursor: pointer;
+    text-indent: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+}
+
+.noticeItemnobe:hover {
+    color: #3B3D3C;
+    background-color: #F1F1F1;
+}
+
+.noticeDate {
+    color: #BBB9BC;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    text-indent: 12px;
+
+}
+
+.theLineforNotice {
+    width: 100%;
+    height: 10px;
+    border-bottom: 1px solid #BBB9BC;
+
+}
+
+.style1 {
+    color: red;
+}
+
+/*重写bootstrap*/
+.form-group {
+    line-height: 15px;
+}
+
+.input-group-btn {
+    font-size: 14px;
+}
+
+.submit_view {
+    background-image: url(../../images/project/noticBgR.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    height: 460px;
+}
+
+/*头部样式*/
+.header_box {
+    width: 100%;
+    height: 34px;
+    background: #f2f5f9;
+}
+
+.logo {
+    float: left;
+    width: 396px;
+    height: 33px;
+    /*background: url("../../images/logo.png") no-repeat 0 0;*/
+    margin: 2px 0 0 20px;
+}
+
+/*-----退出-----*/
+.exitLogin {
+    float: right;
+    line-height: 24px;
+    color: #9eafcf;
+    background: url("../../images/exit.png") no-repeat left center;
+    font-size: 16px;
+    padding-left: 30px;
+    margin: 6px 25px 0 15px;
+}
+
+.exitLogin:hover {
+    color: #8e9fbe;
+}
+
+/*-----消息-----*/
+.messages {
+    float: right;
+    line-height: 24px;
+    background: url(../../images/message.png) no-repeat left center;
+    padding-left: 30px;
+    margin: 15px 15px 0;
+}
+
+.messages-toggle {
+    float: right;
+    line-height: 24px;
+    /*padding-left: 30px;*/
+    margin: 6px 15px 0;
+}
+
+.messages-toggle > span:first-child {
+    color: #a3b7d1;
+    font-size: 20px;
+}
+
+.top-span {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    color: #9eafcf;
+    vertical-align: 3px;
+    cursor: pointer;
+}
+
+.top-span:hover {
+    color: #8e9fbe !important;
+}
+
+.top-badge {
+    font-size: 12px;
+    padding: 2px 3px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #F10000;
+    cursor: pointer;
+    position: absolute;
+    top: -9px;
+    right: -5px;
+}
+
+.username {
+    float: right;
+    background: url(../../images/user.png) no-repeat left center;
+    padding-left: 30px;
+    line-height: 24px;
+    color: #9eafcf;
+    margin: 15px 15px 0;
+}
+
+.username:hover {
+    color: #8e9fbe;
+}
+
+/*重写ui-tab样式*/
+.nav-tabs {
+    height: 65px;
+    border: 1px solid #e2e6e9;
+    background: #fff url("../../images/tab_bg.png") no-repeat right 0;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.nav-tabs > li {
+    margin: 8px 5px 0 0;
+}
+
+.nav-tabs > li > div {
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-tabs > li > div:hover, .nav-tabs > li > div:focus {
+    background: #529de2;
+    border: 1px solid #529de2;
+    color: #fff;
+}
+
+.nav-tabs > li.active > div, .nav-tabs > li.active > div:hover, .nav-tabs > li.active > div:focus {
+    background: #529de2;
+    border: 1px solid #529de2;
+    color: #fff;
+}
+
+.tab-content {
+    padding-top: 10px;
+}
+
+/*input.ng-invalid {
+  border: 1px solid #fa3408;
+}*/
+
+/*.form-control{*/
+/*width: calc( 100% - 12px);*/
+/*float: left;*/
+/*}*/
+.person_message .form-group {
+    margin-bottom: 0px;
+}
+
+.ngViewLeft {
+    width: calc(100% - 141px);
+}
+
+.ngViewNoLeft {
+    width: 100%;
+}
+
+/*手风琴*/
+.accordion-unActive {
+    border: 1px solid #e6ebf7 !important;
+}
+
+.accordion-unActive:hover {
+    border: 2px solid #bcc4e6 !important;
+}
+
+/*checkBox*/
+
+.notSelect {
+    color: #808080bf !important;
+    cursor: not-allowed !important;
+}
+
+.checkBox-light .checkbox > label {
+    color: #257bc7;
+    font-weight: bold;
+}
+
+/*弹出框背景图*/
+.modal-decorate {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 250px;
+    background: url("../../images/project/data_right_bg.png") no-repeat;
+    background-size: cover;
+    z-index: 2
+}
+
+.modal-body {
+    z-index: 1000
+}
+
+.decorate-none {
+    position: relative;
+    z-index: 1000;
+}
+
+/*头像*/
+.person-photo {
+    background: url("../../images/home/pic_img.png") no-repeat;
+    height: 83px;
+    width: 73px;
+}
+
+.new-style-selector .input-group > input {
+    border-radius: 20px !important;
+}
+
+.new-style-selector .input-group > span {
+    right: 40px;
+}
+
+.new-style-selector .input-group > span > button {
+    background: none;
+    border: none;
+    border-radius: 30px;
+    width: 40px;
+}
+
+.new-style-selector .input-group > span > button > i {
+    line-height: 20px;
+}
+
+.new-style-selector .input-group > span > button:hover {
+    font-size: 16px;
+}
+
+.modal-header .alert {
+    height: 50px;
+}
+
+.declareMap-selector ul li {
+    cursor: pointer;
+}
+
+/*table样式重写*/
+.table-restStyle {
+    border-color: #E6E8F7;
+    position: relative;
+    z-index: 1000;
+}
+
+.table-restStyle thead tr {
+    background-color: #7EA2FD;
+    color: white;
+}
+
+.table-restStyle thead tr th {
+    text-align: center;
+    font-weight: normal;
+}
+
+.table-tr-color-blueLight {
+    background-color: #F0F6FF;
+}
+
+/*ui-grid覆盖样式修改*/
+.ui-grid-focuser:focus {
+    box-shadow: none !important;
+}
+
+.ui-grid-menu-button {
+    border-radius: 100%;
+    width: 31px;
+    line-height: 25px;
+    padding-left: 5px;
+}
+
+.ui-grid-render-container-left .ui-grid-cell {
+    font-size: 18px;
+    border: 2px solid #00BCD4 !important;
+    box-sizing: border-box !important;
+    border-top-width: 1px !important;
+    border-bottom-width: 1px !important;
+}
+
+.ui-grid-render-container-left .ui-grid-cell-contents {
+    padding-left: 2px;
+}
+
+.ui-grid-row.ui-grid-row-selected > [ui-grid-row] > .ui-grid-cell {
+    font-weight: bold;
+}
+
+.input-group > input[uib-datepicker-popup][disabled] {
+    background: white !important;
+}
+
+.modal-dialog .input-group > input[uib-datepicker-popup][disabled] {
+    background: #eee !important;
+}
+
+/*popover样式*/
+.ui-grid .popover {
+    left: 0 !important;
+    max-width: 544px;
+}
+
+.ui-grid .table-restStyle {
+    table-layout: fixed;
+    margin-bottom: 0;
+}
+
+.ui-grid .table-restStyle thead tr th {
+    width: 140px;
+}
+
+.ui-grid .popover-content {
+    padding: 5px 7px;
+}
+
+@media (max-width: 1900px) {
+    /*date-picker*/
+    .uib-datepicker-position-right > .uib-datepicker-popup {
+        left: -120px !important;
+    }
+
+}
+
+/*****重写form-control****/
+.form-control-cache {
+    float: left;
+    width: 67%;
+    height: 22px;
+    line-height: 22px;
+    border: 0 none;
+    background: none;
+    outline: none;
+}
+
+.P_L_I_Green {
+    width: 104px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0px auto;
+    background: #8bd371;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.P_L_I_Green:hover {
+    background: #72c057;
+}
+
+.notOpen {
+    background-color: #dddddd
+}
+
+.toggle-switch {
+    background: #ffffff;
+    position: absolute;
+    top: 35px;
+    font-size: 22px;
+    left: 0;
+    z-index:999;
+}
+
+.toggle-switch:hover {
+    cursor: pointer;
+}

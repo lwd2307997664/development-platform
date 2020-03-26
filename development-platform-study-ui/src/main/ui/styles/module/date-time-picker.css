@@ -1,0 +1,127 @@
+.time-panel {
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    height: 230px;
+    min-width: 230px;
+    border: 1px solid #e4e7ed;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.time-panel-body {
+    height: 200px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.time-panel-body:before {
+    position: absolute;
+    content: ' ';
+    top: 86px;
+    width: 100%;
+    display: block;
+    border-top: 1px solid #e4e7ed;
+}
+
+.time-panel-body:after {
+    position: absolute;
+    content: " ";
+    top: 118px;
+    width: 100%;
+    display: block;
+    border-top: 1px solid #e4e7ed;
+}
+
+.time-scroll-container {
+    float: left;
+    overflow: hidden;
+    height: 100%;
+    margin: 0 5px;
+}
+
+.time-scroll-list {
+    list-style: none;
+    height: 100%;
+    overflow: scroll;
+    justify-items: center;
+}
+
+.time-scroll-list:before {
+    content: " ";
+    display: block;
+    height: 86px;
+    width: 100%;
+}
+
+.time-scroll-list:after {
+    content: " ";
+    display: block;
+    height: 63px;
+    width: 100%;
+}
+
+.time-scroll-list li {
+    text-align: center;
+    padding: 0 0.5em;
+    height: 32px;
+    line-height: 32px;
+}
+
+.time-scroll-list li.active {
+    font-weight: 700;
+}
+
+.modal_menu_body:before {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    content: " ";
+    border-width: 0 10px 10px 10px;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #dc93f5;
+    border-style: solid;
+    transform: translate(-50%, -10px);
+}
+
+.modal_menu_body {
+    position: absolute;
+    box-shadow: 4px 4px 10px #dc93f5;
+    border: 1px solid #dc93f5;
+    border-radius: 5px;
+}
+
+.modal_menu {
+    height: 57px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.modal_menu_container {
+    float: left;
+    margin: 10px;
+}
+.preview_img{
+    
+}
+.banner_tool{
+    margin: 20px 0 -20px;
+    width:100%;
+    text-align: center;
+}
+.banner_tool span{
+    margin:0 5px;
+    font-size: 18px;
+}
+.banner_tool span:hover{
+    cursor: pointer;
+}
+.zoom_out{
+    background: url(../../images/home/I_O_red.png) no-repeat;
+}
+.glyphicon-1-1:before{
+    content: '1:1';
+}

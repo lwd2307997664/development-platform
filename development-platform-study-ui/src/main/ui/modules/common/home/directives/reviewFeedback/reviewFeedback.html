@@ -1,0 +1,49 @@
+<div class="col-md-12 statistics_box" ng-init="getReviewedInfo()">
+    <div class="col-md-8">
+        <div class="apply_left mar_t35p">
+            <div class="apply_part apply_add mar_r20p">
+                <p class="c_gray">本月申报增员</p>
+                <p class="c_gray mar_t40p"><span class="c_orage f35p" ng-bind="register"></span>人</p>
+                <a href="" class="apply_btn"  ng-click="goShortcut('/employee/register')">继续增员</a>
+            </div>
+            <div class="apply_part apply_reduce">
+                <p class="c_gray">本月申报减员</p>
+                <p class="c_gray mar_t40p"><span class="c_font_blue f35p" ng-bind="dimission"></span>人</p>
+                <a href="" class="apply_btn"  ng-click="goShortcut('/employee/dimission?fromType=1')">继续减员</a>
+
+            </div>
+        </div>
+        <div class="apply_right mar_t35p">
+<!--            <div style="position:relative;height:200px;width:500px;margin: 0 auto">-->
+<!--                <span style="position: absolute;top: 56px;left: calc(100% - 280px);font-size: 60px;color: #69A0F6;">￥</span>-->
+<!--                <e-chart id="main" option="option" e-click="eClick(param)" e-mouseover="eMouseover(param)" e-mouseout="eMouseout(param)" change-value="changeValue"></e-chart>-->
+<!--            </div>-->
+<!--            <ul class="pay_list">-->
+<!--                <li ng-if="payable1">企业养老保险<span ng-bind="payable1|number:2"></span>元</li>-->
+<!--                <li ng-if="payable6">机关事业养老保险<span ng-bind="payable6|number:2"></span>元</li>-->
+<!--                <li ng-if="payable7">职业年金<span ng-bind="payable7|number:2"></span>元</li>-->
+<!--                <li ng-if="payable2">失业保险<span ng-bind="payable2|number:2"></span>元</li>-->
+<!--                <li ng-if="payable3">医疗保险<span ng-bind="payable3|number:2"></span>元</li>-->
+<!--                <li ng-if="payable4">工伤保险<span ng-bind="payable4|number:2"></span>元</li>-->
+<!--                <li ng-if="payable5">生育保险<span ng-bind="payable5|number:2"></span>元</li>-->
+<!--            </ul>-->
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="I_one1 clearfix">
+            <div class="I_Check_til"><i></i>审核业务状态(<span ng-bind="issue"></span>)</div>
+            <div class="I_Check" ng-repeat="rs in reviewedStatus">
+                <!--<div ng-class="'I_Check_text'+rs.image" ng-show="rs.type!==3">-->
+                    <div class="I_Check_text" ng-class="'I_Check_text'+rs.image"><a ng-click="reviewDetailed(rs.type)" class="hand"><span
+                            ng-bind="rs.count"></span></a>
+                        <!--<a ng-show="rs.type===1" ng-click="reviewDetailed(3)">(<span-->
+                                <!--ng-bind="rs.count"></span>件待复核)</a>-->
+                    </div>
+                    <div  ng-class="'I_Check_til_'+rs.color"><span ng-bind="rs.name"></span><i></i></div>
+
+                <!--<div ng-if="rs.type!=2" class="I_onefg"></div>-->
+            </div>
+        </div>
+    </div>
+
+</div>

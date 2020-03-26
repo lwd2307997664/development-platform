@@ -1,0 +1,29 @@
+<div class="container" ng-controller="BusinessApplyListCtrl">
+    <uib-tabset>
+        <uib-tab heading="{{viewTitle}}" active=tabs.apply ng-if="showTab.single">
+            <div>
+                <ng-include src="viewPath"></ng-include>
+            </div>
+        </uib-tab>
+        <uib-tab heading="批量{{viewTitle}}" active=tabs.query ng-if="showTab.batch">
+            <div ng-controller="BusinessApplyUploadCtrl">
+                <sipub-file-upload
+                        apply-type-value="applyTypeValue"
+                        upload-url="{{uploadUrl}}"
+                        excel-templete="../modules/employee/register/exportEmpRegister.xls"></sipub-file-upload>
+            </div>
+            <div ng-controller="BusinessApplyUploadListCtrl">
+                <sipub-file-upload-list apply-type="applyType" apply-type-value="applyTypeValue"
+                                        row-count="listRowCount"
+                                        err-column-defs="errColumnDefs"></sipub-file-upload-list>
+            </div>
+        </uib-tab>
+        <uib-tab heading="当前已保存申报({{listRowCount}})" active=tabs.applyList ng-if="showTab.manage">
+            <div>
+                <sipub-apply-list
+                        list-column-defs="listColumnDefs" apply-type="applyType" editable="true"
+                        row-count="listRowCount"></sipub-apply-list>
+            </div>
+        </uib-tab>
+    </uib-tabset>
+</div>

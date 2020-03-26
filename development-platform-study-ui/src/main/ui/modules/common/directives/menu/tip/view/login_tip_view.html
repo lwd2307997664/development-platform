@@ -1,0 +1,44 @@
+<div class="modal-header">
+  <table style="width: 100%">
+    <tr>
+      <td align="left"><h5>请选择需要登录的关联单位账户</h5></td>
+      <td align="right">
+        <button class="glyphicon glyphicon-remove btn-primary" name="closeBtn"
+                style="width: 18px;height:18px;border:0"
+                data-ng-click="cancel();">
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="modal-body">
+  <table class="table  table-bordered table-hover table-condensed" style="cursor: default">
+    <thead>
+    <tr>
+      <th style="text-align: center;width: 30%">单位编码</th>
+      <th style="text-align: center;width: 70%">单位名称</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="text-center" data-ng-repeat="user in pageObject"
+        ng-class="getSelectedClass(user)" ng-click="toggleSelection(user)">
+      <td style="width: 30%">
+        {{ user.companyNumber }}
+      </td>
+      <td style="width: 70%">
+        {{ user.name }}
+      </td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="6">
+        <div ng-show="totalItems>0">
+          <girder-pagination items-per-page="pageSize" total-items="totalItems"
+                             ng-model="currentPage"></girder-pagination>
+        </div>
+      </td>
+    </tr>
+    </tfoot>
+  </table>
+</div>

@@ -1,0 +1,27 @@
+<div ng-class="{true: 'card_progress_icon_right', false: 'card_progress_icon_left'}[direction]">
+    <div class="card_progress_btnBox">
+        <button type="button" class="card_progress_btn" ng-class="progressFun('ring',uiControl.currentState)"
+                id="popoverImg" aria-hidden="true"
+                uib-popover-template="'progressTooltip.html'" popover-is-open="popoverIsOpen"
+                popover-trigger="none" popover-placement="bottom"
+                ng-mouseleave="popoverImg($event,false)" ng-mouseenter="popoverImg($event,true)">
+                  <span class="card_progress_text" ng-bind="uiControl.progressIndex+1"
+                        ng-class="progressFun('sign',uiControl.currentState)"></span>
+        </button>
+        <!--<span class="glyphicon glyphicon-ok card_progress_text" ng-class="progressFun('sign',uiControl.currentState)"-->
+        <!--aria-hidden="true"-->
+        <!--&gt;</span>-->
+
+    </div>
+    <div ng-class="{'top': 'card_progress_descript_top', 'bottom': 'card_progress_descript_bottom'}[uiControl.descirptLoc]">
+    <span class="card_progress_descript_text" ng-bind="uiControl.time" style="font-size: 12px;"
+          ng-class="{'fw' : uiControl.currentState!=='0'} "></span>
+        <span class="card_progress_descript_text" ng-bind="uiControl.descript" title="{{uiControl.descript}}"
+              ng-class="{'fw' : uiControl.currentState!=='0'} "></span>
+    </div>
+</div>
+
+<div ng-if="!uiControl.isHiddenLine"
+     ng-class="{true: 'card_progress_line_right', false: 'card_progress_line_left'}[direction]">
+    <div class="card_progress_connectLine"></div>
+</div>

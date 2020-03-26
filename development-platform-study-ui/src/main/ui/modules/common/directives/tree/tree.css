@@ -1,0 +1,20 @@
+.neu-tree-unit{cursor:pointer;width: 100%;padding: 1px 3px 1px 18px;color: #333333; font-size: 13px;}
+.neu-tree-unit-fixed {float: left; width: 54px;}
+.neu-tree-unit input[type="radio"], .neu-tree-unit input[type="checkbox"] {margin:4px 2px 0px 0px; float:right;}
+.neu-tree-unit-fixed > span {display:inline-block; float:right;}
+.neu-tree-unit-expand-icon {margin:2px 3px 0px 0px;}
+.neu-tree-unit-parent-icon {margin:2px 6px 0px 0px;}
+.neu-tree-unit-title {display:block; margin:1px 0px 0px 54px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; padding-left:2px; border:1px solid transparent;}
+.neu-tree-unit span.active {background-color:#f8f2ea; color:#299BE8; border:1px solid #e4e4e4;}
+.neu-tree-dropDown-none { display: none;}
+.neu-tree-dropDown-this{position: absolute;
+  top:0px;
+  left:15px;
+  width: 90%!important;
+  height:300px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  border-radius: 3PX;
+  background: #fff;
+  z-index: 9999;
+}

@@ -1,0 +1,55 @@
+{
+  "account": "9141000033716238XQ",
+  "name": "陈静",
+  "email": null,
+  "channel": null,
+  "mobile": "13623800620",
+  "idNumber": null,
+  "associatedCompanys": [
+    {
+      "id": 419900800611,
+      "companyNumber": "419900800611",
+      "name": "中国邮政集团公司河南省分公司",
+      "orgCode": "1980005",
+      "taxCode": 419900800611
+    }
+  ],
+  "associatedPersons": [],
+  "roles": [
+    "ROLE_COMPANY"
+  ],
+  "apps": [
+    {
+      "id": "ehrss-si-enterprise",
+      "name": "河南企业网厅",
+      "desc": "河南企业网厅",
+      "url": "/api/enterprise/usernamepassword/**"
+    }
+  ],
+  "userType": "1",
+  "headImgUrl": null,
+  "hasRealNameAuth": true,
+  "organization": {
+    "id": "ff80808167bc964d0167cb0408bf06aa",
+    "orgNumber": "1980005",
+    "name": "中国邮政集团公司河南省分公司",
+    "stateCode": null,
+    "orgType": "0",
+    "address": null,
+    "zip": null,
+    "phone": null
+  },
+  "mainCompanyNumber": null,
+  "associatedOrgs": [
+    {
+      "order": 0,
+      "name": "中国邮政集团公司河南省分公司",
+      "number": "1980005",
+      "type": "0",
+      "lvl": "0",
+      "id": "ff80808167bc964d0167cb0408bf06aa"
+    }
+  ],
+  "hasReview": true,
+  "loginChannel": "0"
+}

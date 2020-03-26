@@ -1,0 +1,236 @@
+/*
+ * 卡进度样式
+ * --------------------------------------------------
+ * 纯CSS页面，试用
+ */
+
+/*-----布局-----*/
+.card_progress_pad {
+    /*width: 350px;*/
+    margin: 60px 40px 60px 0;
+}
+
+/*-----按钮部分-----*/
+.card_progress_btnBox {
+    position: relative;
+    height: 46px;
+    width: 46px;
+    margin: 0 auto;
+}
+
+.card_progress_icon_left {
+    position: relative;
+    width: 46px;
+    float: left;
+}
+
+.card_progress_icon_right {
+    position: relative;
+    width: 46px;
+    float: right;
+}
+
+.card_progress_btn {
+    border-radius: 42px;
+    cursor: pointer;
+    height: 46px;
+    width: 46px;
+}
+
+/*.card_progress_btn:hover {*/
+/*background-color: #ffffff;*/
+/*}*/
+/*环：成功颜色*/
+.card_progress_btn_success {
+    border: 3px solid #33a225;
+    background-color: #ffffff;
+}
+
+/*环：正在进行颜色*/
+.card_progress_btn_conduct {
+    border: 5px solid #808DF9;
+    background-color: white;
+    box-shadow: 0 0 15px #cce4fd inset
+}
+
+/*环：失败颜色*/
+.card_progress_btn_faile {
+    border: 3px solid #D0382A;
+    background-color: #D0382A;
+}
+
+/*环：未开始颜色*/
+.card_progress_btn_wait {
+    border: 5px solid #DEDEDE;
+    background-color: #ffffff;
+    box-shadow: 0 0 7px #DEDEDE inset;
+}
+
+/*蓝色备用状态*/
+.card_progress_btn_blue {
+    /*-moz-box-shadow:inset 0 39px 0 -24px #f0f7fa;*/
+    /*-webkit-box-shadow:inset 0 39px 0 -24px #f0f7fa;*/
+    /*box-shadow:inset 0 39px 0 -24px #f0f7fa;*/
+    background-color: #33bdef;
+    -moz-border-radius: 42px;
+    -webkit-border-radius: 42px;
+    border-radius: 42px;
+    border: 1px solid #057fd0;
+    display: inline-block;
+    cursor: pointer;
+    height: 46px;
+    width: 46px;
+}
+
+.card_progress_btn_blue:hover {
+    background-color: #019ad2;
+}
+
+.card_progress_text {
+    /*position: absolute;*/
+    /*top: 9px;*/
+    /*left: 16px;*/
+    color: #33a225;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*描述位置*/
+.card_progress_descript_top {
+    position: absolute;
+    top: -45px;
+    width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.card_progress_descript_bottom {
+    position: absolute;
+    bottom: -45px;
+    left: -10px;
+    width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*描述字体样式*/
+.card_progress_descript_text {
+    display: block;
+    background-color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*padding-left: 14%;*/
+}
+
+/*当前状态颜色*/
+.card_progress_inProgressColor {
+    color: #808DF9;
+}
+
+/*未完成状态颜色*/
+.card_progress_unStartColor {
+    color: #929292;
+}
+
+/*失败状态颜色*/
+.card_progress_faileColor {
+    color: #ffffff;
+}
+
+/*-----连接线部分-----*/
+.card_progress_line_left {
+    width: calc(100% - 46px);
+    float: left;
+}
+
+.card_progress_line_right {
+    width: calc(100% - 46px);
+    /*float: right;*/
+}
+
+/*连接线*/
+.card_progress_connectLine {
+    width: 120%;
+    height: 4px;
+    margin: 21px 0 0 -15.125px;
+    border-radius: 2px;
+    background: #e0e0e0;
+}
+
+/*过渡线*/
+.card_progress_excessiveLine {
+    width: 120%;
+    height: 10px;
+    margin: 20px 0 0 -15.125px;
+    border-radius: 2px;
+    border-top: 2px solid gainsboro;
+    border-bottom: 2px solid gainsboro;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #33BDEF));
+    background: -moz-linear-gradient(left, #f24437 5%, #33BDEF 100%);
+    background: -webkit-linear-gradient(left, #f24437 5%, #33BDEF 100%);
+    background: -o-linear-gradient(left, #f24437 5%, #33BDEF 100%);
+    background: -ms-linear-gradient(left, #f24437 5%, #33BDEF 100%);
+    background: linear-gradient(to right, #f24437 5%, #33BDEF 100%);
+}
+
+/*垂直线*/
+.card_progress_verticalLine {
+    width: 6px;
+    height: 70px;
+    border-radius: 2px;
+    margin-right: 38px;
+    background: #dfdfdf;
+}
+
+.card_progress_secondRow {
+    margin-right: calc(20% - 50px);
+    width: 10px;
+    float: right;
+}
+
+.card_progress_fourthRow {
+    margin-left: calc(20% - 50px);
+    width: 10px;
+    float: left;
+}
+
+.cardMessage_none {
+    display: none
+}
+
+.card_progress_popover_title {
+    margin-top: 8px;
+    width: 200px;
+    box-shadow: 0 1px 0 #2196F3;
+    border-bottom: 1px solid #2196F3;
+}
+
+.card_progress_popover_content {
+    margin: 16px 0 2px 0;
+    width: 200px;
+}
+
+.card_progress_reverse_repeat {
+    float: right;
+    /*margin: 0 calc(10% - 23px);*/
+    width: 20%;
+}
+
+.card_progress_reverse_repeat .card_progress_icon_left {
+    float: right;
+}
+
+.card_progress_repeat {
+    float: left;
+    width: 20%;
+}
+
+.card_progress_single {
+    margin-right: calc(20% - 65px);
+}
+
+.card_progress_muti {
+    margin-left: calc(20% - 65px);
+}

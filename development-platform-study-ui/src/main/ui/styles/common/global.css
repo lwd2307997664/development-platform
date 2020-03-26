@@ -1,0 +1,228 @@
+/*
+		@Author   Cherry SMY
+		@DATA     2011.10.20
+*/
+
+/* Style Reset
+-----------------------------------------------------------------------------------------------------*/
+p{margin: 0;}
+button,ul,li,p{margin: 0; padding: 0; border:0; }
+.clear { clear:both; }
+.M{ width:10px; height:10px; float:left; font-size:0px;}
+.S{ width:15px; height:15px; float:left; font-size:0px;}
+.H{ width:23px; height:23px; clear:both; font-size:0px;}
+.K{ width:20px; height:20px; clear:both; font-size:0px;}
+
+.fg{ width:100%; height:10px; clear:both;}
+.db{ display: block; }
+.di{ display: inline; }
+.mar{ margin:0 auto;}
+.hand{cursor:pointer;}
+/* 链接样式
+----------------------------------------------------------------------------------------------------*/
+a { color: #555555; text-decoration: none; }
+a:hover {
+	text-decoration: none;
+	color: #ff9300;
+}
+
+/* 左右浮动样式
+----------------------------------------------------------------------------------------------------*/
+.fl { float:left; }
+.fr { float:right; }
+.modal-dialog .fn { float:unset !important; }
+
+/* 自动调整高度
+-----------------------------------------------------------------------------------------------------*/
+.height100 {width: 100%;height:100px}
+.height400 {width: 100%;height:400px}
+.height700 {width: 100%;height:700px}
+.height800 {width: 100%;height:800px}
+.height1200 {width: 100%;height:1200px}
+.height1600 {width: 100%;height:1600px}
+/* 颜色
+-----------------------------------------------------------------------------------------------------*/
+.c_red { color: #e60012; }
+.c_blue { color: #066DB8; }
+.c_orage { color: #ff8800; }
+.c_green { color: #30908D; }
+.c_yellow { }
+.c_font_blue{color: #489ff6;}
+.c_gray{color: #888888;}
+.c_light_gray{color: #b8b8b8;}
+.c0 { color: #000000; }
+.c3 { color: #333333; }
+.c6 { color: #666666; }
+.c9 { color: #999999; }
+.cc { color: #CCCCCC; }
+.cd { color: #DDDDDD; }
+.ce { color: #EEEEEE; }
+.cf { color: #FFFFFF; }
+
+/* 文本样式
+-----------------------------------------------------------------------------------------------------*/
+.f0p  { font-size: 0px; }
+.f6p  { font-size: 6px; }
+.f10p { font-size: 10px; }
+.f12p { font-size: 12px; }
+.f13p { font-size: 13px; }
+.f14p { font-size: 14px; }
+.f15p { font-size: 15px; }
+.f16p { font-size: 16px; }
+.f17p { font-size: 17px; }
+.f18p { font-size: 18px; }
+.f20p { font-size: 20px; }
+.f25p { font-size: 25px; }
+.f35p { font-size: 35px; }
+.f45p { font-size: 45px; }
+.fw{ font-weight:bold; }
+.fi{ font-style:italic; }
+.fs{ text-decoration:line-through;}
+.fu{ text-decoration:underline;}
+.indent { text-indent: 24px; }
+
+/* mouse style
+----------------------------------------------------------------------------------------------------*/
+.mou_p { cursor: pointer; }
+.mou_m { cursor: move; }
+.mou_t { cursor: text; }
+.mou_n { cursor: not-allowed}
+
+/* Paddings
+----------------------------------------------------------------------------------------------------*/
+.pad_0p { padding: 0px; }
+.pad_1p { padding: 1px; }
+.pad_2p { padding: 2px; }
+.pad_3p { padding: 3px; }
+.pad_4p { padding: 4px; }
+.pad_5p { padding: 5px; }
+.pad_15p { padding: 15px; }
+.pad_20p { padding: 20px; }
+.pad_10p0p { padding: 10px 0px; }
+
+.pad_t5p { padding-top: 5px; }
+.pad_t10p { padding-top: 10px; }
+.pad_t15p { padding-top: 15px; }
+.pad_t20p { padding-top: 20px; }
+
+.pad_b5p { padding-bottom: 5px; }
+.pad_b10p { padding-bottom: 10px; }
+.pad_b20p { padding-bottom: 20px; }
+
+.pad_l5p { padding-left: 5px; }
+.pad_l10p { padding-left: 10px; }
+.pad_l20p { padding-left: 20px; }
+.pad_l25p { padding-left: 25px; }
+.pad_l40p { padding-left: 40px; }
+.pad_l45p { padding-left: 45px; }
+
+.pad_r5p { padding-right: 5px; }
+.pad_r10p { padding-right: 10px; }
+.pad_r15p { padding-right: 15px; }
+.pad_r20p { padding-right: 20px; }
+.pad_r25p { padding-right: 25px; }
+.pad_r70p { padding-right: 70px; }
+
+.pad_r_byself_15 { float: left; }
+.pad_r_byself_35 { float: left;}
+.pad_r_byself2 { float: left;}
+
+.pad_enterprise_col{padding: 0 10px 0 5px;}
+
+.float_left { float: left;}
+/* Margins
+----------------------------------------------------------------------------------------------------*/
+.mar_0p { margin: 0px; }
+.mar_10p { margin: 10px; }
+.mar_10p0p { margin: 10px 0px; }
+
+.mar_t5p { margin-top: 5px; }
+.mar_t9p { margin-top: 9px; }
+.mar_t10p { margin-top: 10px; }
+.mar_t15p { margin-top: 15px; }
+.mar_t20p { margin-top: 20px; }
+.mar_t30p { margin-top: 30px; }
+.mar_t35p { margin-top: 35px; }
+.mar_t40p { margin-top: 40px; }
+
+.mar_b0p { margin-bottom: 0px; }
+.mar_b5p { margin-bottom: 5px; }
+.mar_b10p { margin-bottom: 10px; }
+.mar_b20p { margin-bottom: 20px; }
+
+.mar_l5p { margin-left: 5px; }
+.mar_l10p { margin-left: 10px; }
+.mar_l15p { margin-left: 15px; }
+.mar_l20p { margin-left: 18px; }
+.mar_l25p { margin-left: 20px; }
+.mar_l30p { margin-left: 200px; }
+
+.mar_r5p { margin-right: 5px; }
+.mar_r10p { margin-right: 10px; }
+.mar_r20p { margin-right: 20px; }
+
+/* Text
+----------------------------------------------------------------------------------------------------*/
+.text_l { text-align: left !important; }
+.text_r { text-align: right; }
+.text_c { text-align: center; }
+
+/* line height
+----------------------------------------------------------------------------------------------------*/
+.lh30p { line-height: 30px; }
+.lh25p { line-height: 27px; }
+.lh150p { line-height: 150%; }
+.lh200p { line-height: 200%; }
+.lh300p { line-height: 300%; }
+
+
+/* H
+-----------------------------------------------------------------------------------------------------*/
+h1 { font-size: 24px; }
+h2 { font-size: 22px; }
+h3 { font-size: 20px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+
+/* Border
+-----------------------------------------------------------------------------------------------------*/
+/* 实边框 */
+.border{ border:1px #e2e2e2 solid }
+.border_t{ border-top:1px #e2e2e2 solid }
+.border_r{ border-right:1px #e2e2e2 solid }
+.border_b{ border-bottom:1px #e3e3e3 solid }
+.border_l{ border-left:1px #e2e2e2 solid }
+
+/* 虚边框 */
+.border_d{ border:1px #E4E4E4 dotted }
+.border_dt{ border-top:1px #9d9b9b dotted }
+.border_dr{ border-right:1px #1B1B14 dotted }
+.border_db{ border-bottom:1px #9d9b9b dotted }
+.border_dl{ border-left:1px #E4E4E4 dotted }
+
+/* 无边框 */
+.border_none{ border-top:0px; border-right:0px; border-bottom:0px; border-left:0px;}
+
+
+/* Module Width
+----------------------------------------------------------------------------------------------------*/
+.w10 { width: 10px; }
+.w20 { width: 20px; }
+.w30 { width: 30px; }
+.w40 { width: 40px; }
+.w50 { width: 50px; }
+.w60 { width: 60px; }
+.w70 { width: 70px; }
+.w80 { width: 80px; }
+.w90 { width: 90px; }
+.w100 { width: 100px; }
+.w120 { width: 120px; }
+.w160 { width: 160px; }
+.w320 { width: 320px; }
+.w400 { width: 400px; }
+.w560 { width: 560px; }
+.w640 { width: 640px; }
+/*IE input X 去掉文本框的叉叉和密码输入框的眼睛图标*/
+::-ms-clear,::-ms-reveal{display:none;}
+.input-group>input[uib-datepicker-popup][disabled]{background:#eee!important}

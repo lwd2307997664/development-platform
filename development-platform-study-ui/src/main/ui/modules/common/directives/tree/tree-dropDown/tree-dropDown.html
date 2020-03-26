@@ -1,0 +1,5 @@
+<div class="form-control" style="width: 100%;-moz-user-select:none;white-space: nowrap;overflow: hidden;line-height: 27px;" ng-click="toggleDrop()" >
+    <span ng-repeat="sa in selectArray" style="font-weight: bold;" ng-bind="(isFullname==='true'? sa.fullName:sa.name) +($last? '&nbsp;':separator+'&nbsp;')"></span>
+</div>
+<div neu-tree ng-class="{'neu-tree-dropDown-none' : isAppear}" style="width: 100%"  data="treeData" is-checkbox=true is-extend="true" max="{{max}}"
+     get-select-node="getSelectNode(value.currentNode)" clear="clear" ></div>

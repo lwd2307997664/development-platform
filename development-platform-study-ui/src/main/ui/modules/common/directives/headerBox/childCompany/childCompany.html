@@ -1,0 +1,13 @@
+<div class="menumap panel-body">
+
+    <div class="panel-heading">
+        <span>请选择管理单位</span>
+    </div>
+    <div class="panel-body-box" style="margin-top: 15px;">
+        <table class="table table-striped table-hover">
+            <tr  ng-repeat="cc in childCompanys" >
+                <td ng-click="select(cc)">{{cc.name}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

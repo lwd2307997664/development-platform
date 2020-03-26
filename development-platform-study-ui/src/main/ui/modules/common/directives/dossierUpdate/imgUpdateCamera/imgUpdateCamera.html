@@ -1,0 +1,19 @@
+<div class="panel panel-default" id="imgUpdateCamera" style="margin:0;padding:0;" ng-init="viewInit()" >
+  <div class="row img_update_camera_panel">
+    <div class="img_update_camera_switch" ng-class="{true: 'IUC_hand', false: 'IUC_forbid'}[isHand.catch]"  ng-click="switch()" title="切换"></div>
+    <div class="img_update_camera_exit" ng-click="close()" title="关闭"></div>
+    <img id="dossierImgCamera" class="img_update_camera_img" ng-class="{'IUC_pad10' : !isHand.catch}"
+         ng-src="{{imgDate}}"/>
+
+    <div class="img_update_camera_position">
+      <div class="img_update_camera_btnGroup">
+        <div class="img_update_camera_catch img_update_camera_animation IUC_hand"
+             ng-class="{true: 'IUC_hand', false: 'IUC_forbid'}[isHand.catch]" ng-click="catch()" title="拍照"></div>
+        <div class="img_update_camera_confirm img_update_camera_animation IUC_forbid"
+             ng-class="{true: 'IUC_hand', false: 'IUC_forbid'}[isHand.confirm]" ng-click="confirm()" title="确定"></div>
+        <div class="img_update_camera_reset img_update_camera_animation IUC_forbid"
+             ng-class="{true: 'IUC_hand', false: 'IUC_forbid'}[isHand.reset]" ng-click="reset()" title="重置"></div>
+      </div>
+    </div>
+  </div>
+</div>

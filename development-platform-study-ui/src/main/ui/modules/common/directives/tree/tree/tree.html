@@ -1,0 +1,30 @@
+<div class="neu-tree-div">
+    <div neu-tree-unit ng-repeat="td in treeData" unit-data="td" unit-index=0 unit-check-array="unitCheckArray"
+         unit-icon="iconObj" unit-check="{{isCheckbox}}" unit-extend="isExtend" unit-max="{{max}}"
+         ng-click="selectOne(td,$event)" stop-propagation>
+        <div neu-tree-unit ng-repeat="tdChild in td.children" unit-data="tdChild" unit-index=1
+             unit-check-array="unitCheckArray" unit-icon="iconObj" unit-check="{{isCheckbox}}" unit-extend="isExtend"
+             unit-max="{{max}}" ng-click="selectOne(tdChild,$event)" stop-propagation>
+            <div neu-tree-unit ng-repeat="tdChild_child in tdChild.children" unit-data="tdChild_child" unit-index=2
+                 unit-check-array="unitCheckArray" unit-icon="iconObj" unit-check="{{isCheckbox}}"
+                 unit-extend="isExtend" unit-max="{{max}}" ng-click="selectOne(tdChild_child,$event)" stop-propagation>
+                <div neu-tree-unit ng-repeat="tdChild_child_child in tdChild_child.children"
+                     unit-data="tdChild_child_child" unit-index=3 unit-check-array="unitCheckArray" unit-icon="iconObj"
+                     unit-check="{{isCheckbox}}" unit-extend="isExtend" unit-max="{{max}}"
+                     ng-click="selectOne(tdChild_child_child,$event)" stop-propagation>
+                    <div neu-tree-unit ng-repeat="tdChild_child_child_child in tdChild_child_child.children"
+                         unit-data="tdChild_child_child_child" unit-index=4 unit-check-array="unitCheckArray" unit-icon="iconObj"
+                         unit-check="{{isCheckbox}}" unit-extend="isExtend" unit-max="{{max}}"
+                         ng-click="selectOne(tdChild_child_child_child,$event)" stop-propagation>
+                        <div neu-tree-unit ng-repeat="tdChild_child_child_child_child in tdChild_child_child_child.children"
+                             unit-data="tdChild_child_child_child_child" unit-index=4 unit-check-array="unitCheckArray" unit-icon="iconObj"
+                             unit-check="{{isCheckbox}}" unit-extend="isExtend" unit-max="{{max}}"
+                             ng-click="selectOne(tdChild_child_child_child_child,$event)" stop-propagation>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

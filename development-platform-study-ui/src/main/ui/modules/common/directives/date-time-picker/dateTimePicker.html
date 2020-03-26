@@ -1,0 +1,32 @@
+<input ng-style="{display:{true:'block',false:'none'}[isOpen]}" name="date-time-picker" type="text" class="form-control"
+       uib-datepicker-popup="yyyy-MM-dd" ng-model="dateValue" is-open="isOpen" min-date="min" max-date="max"
+       girder-date-format="day" datepicker-options="dateOptions" show-button-bar="false" readonly/>
+<input type="text" ng-model="dateTimeValue" ng-style="{display:{true:'none',false:'display'}[isOpen]}"
+       class="form-control" readonly>
+<div ng-if="isOpen1" class="time-panel" style="margin-top: 2px;" ng-init="initTime()" ng-style="{top:top+'px'}">
+    <div class="time-panel-body">
+        <div class="time-scroll-container" ng-style="{width:hw+'px'}">
+            <ul class="time-scroll-list" role="hour" ng-style="{width:hw+8+'px'}">
+                <li ng-repeat="h in hours" ng-bind="h" ng-class="{'active':$index==hIndex}"
+                    ng-click="selectHour($index)">
+                </li>
+            </ul>
+        </div>
+        <div class="time-scroll-container" ng-style="{width:hw+'px'}">
+            <ul class="time-scroll-list" role="minute" ng-style="{width:hw+8+'px'}">
+                <li ng-repeat="m in minutes" ng-bind="m" ng-class="{'active':$index==mIndex}"
+                    ng-click="selectMinute($index)">
+                </li>
+            </ul>
+        </div>
+        <div class="time-scroll-container" ng-style="{width:hw+'px'}">
+            <ul class="time-scroll-list" role="second" ng-style="{width:hw+8+'px'}">
+                <li ng-repeat="s in seconds" ng-bind="s" ng-class="{'active':$index==sIndex}"
+                    ng-click="selectSecond($index)">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <button type="button" style="position:absolute;bottom: 5px;right:5px;" class="btn btn-sm " ng-click="close()">确定
+    </button>
+</div>

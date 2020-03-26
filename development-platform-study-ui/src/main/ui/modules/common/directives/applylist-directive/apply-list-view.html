@@ -1,0 +1,23 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div id="applyEventGrid" class="form-horizontal" ng-init="getApplyList();">
+            <div style="width: 100% ;height: 400px;" ui-grid="applyListOptions" ui-grid-auto-resize class="grid"></div>
+        </div>
+        <!--<div id="spinner" class="loader_container">-->
+            <!--<img ng-src="images/girder/common/spinning.gif">-->
+        <!--</div>-->
+        <div class="form-group mar_t10p">
+            <div class="col-md-4 ">
+                <input type="text" class="form-control"
+                       ng-model="filterValue" ng-blur="filter()" ng-keyup="myKeyup($event)" placeholder="过滤条件:姓名/证件号码"/>
+            </div>
+            <div class="col-md-8 text_r">
+                <div class="">
+                    <button type="button" class="btn btn-white" style="width: 180px" id="saveButton"
+                            ng-click="getApplyList();">刷新
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

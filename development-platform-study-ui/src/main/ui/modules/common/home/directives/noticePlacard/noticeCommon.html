@@ -1,0 +1,40 @@
+<div>
+    <div class="modal-header">
+        <table style="width: 100%">
+            <tr>
+                <td align="left"><h4>{{modalOptions.headerText}}</h4></td>
+                <td align="right">
+                    <button class="glyphicon glyphicon-remove btn-primary" name="closeBtn"
+                            style="width: 18px;height:18px;border:0"
+                            data-ng-click="modalOptions.close();">
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="modal-body">
+        <form name="infoForm" class="form-horizontal formCustomSetting normalForm" novalidate>
+            <div style="background:#f6f6f6;">
+                <div style="background-color: #fffffe; border-radius: 4px; border: 1px solid #666666;font-family:楷体;height: 800px;overflow-x: hidden;overflow-y: visible;">
+                    <h1 style="text-align: center;">{{modalOptions.headerText}}</h1>
+                    ----------------------------------------------------------------------------------------------------<br/>
+                    <span style="font-size:20px;text-indent:2em;">
+                <td class="context6"><font style="LINE-HEIGHT: 200%; FONT-FAMILY: '宋体'; FONT-SIZE: 16px">&nbsp;&nbsp;&nbsp;&nbsp;<!--<$ [正文] >begin-->
+                        <div id="zwxinx"><p style="FONT-SIZE: 10.5pt; FONT-FAMILY: 'Calibri',sans-serif; TEXT-ALIGN: justify; TEXT-JUSTIFY: inter-ideograph; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 30pt"><span style="FONT-SIZE: 16pt; FONT-FAMILY: 仿宋_GB2312;white-space: pre-wrap;">{{modalOptions.show.context}}</span></p>
+<p style="FONT-SIZE: 10.5pt; FONT-FAMILY: 'Calibri',sans-serif; TEXT-ALIGN: justify; TEXT-JUSTIFY: inter-ideograph; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 30pt; TEXT-INDENT: 32pt">&nbsp;</p>
+<p style="FONT-SIZE: 10.5pt; FONT-FAMILY: 'Calibri',sans-serif; TEXT-ALIGN: justify; TEXT-JUSTIFY: inter-ideograph; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 30pt; TEXT-INDENT: 32pt">&nbsp;</p>
+<p style="FONT-SIZE: 10.5pt; FONT-FAMILY: 'Calibri',sans-serif; TEXT-ALIGN: justify; TEXT-JUSTIFY: inter-ideograph; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 30pt; TEXT-INDENT: 32pt">&nbsp;</p>
+<p style="FONT-SIZE: 10.5pt; FONT-FAMILY: 'Calibri',sans-serif; TEXT-ALIGN: justify; TEXT-JUSTIFY: inter-ideograph; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 30pt; TEXT-INDENT: 32pt"><span ng-if="modalOptions.show.showFlag" style="FONT-SIZE: 16pt; FONT-FAMILY: 仿宋_GB2312">附件：<a target="_blank" href="{{modalOptions.show.linkAddress}}">{{modalOptions.show.linkName}}</a></span></p>
+<p style="FONT-SIZE: 10.5pt; FONT-FAMILY: 'Calibri',sans-serif; TEXT-ALIGN: justify; TEXT-JUSTIFY: inter-ideograph; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 30pt">&nbsp;</p>
+<p style="FONT-SIZE: 10.5pt; FONT-FAMILY: 'Calibri',sans-serif; TEXT-ALIGN: justify; TEXT-JUSTIFY: inter-ideograph; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 30pt">&nbsp;</p>
+<p align="right"><span style="FONT-SIZE: 16pt; FONT-FAMILY: 'Times New Roman',serif">{{modalOptions.show.time}}&nbsp;&nbsp;&nbsp;&nbsp;</span> </p> </div>
+                    <!--<$ [正文] >end--></font><br>
+                        </td>
+                    </span>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+</div>

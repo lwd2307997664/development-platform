@@ -1,0 +1,20 @@
+<div class="card_progress_pad"  >
+  <div class="row" ng-repeat="row in rowData">
+    <div ng-if="row.rowIndex%2===1">
+      <div ng-class="row.className">
+        <div class="card_progress_verticalLine"></div>
+      </div>
+    </div>
+    <div ng-if="row.rowIndex%2===0" ng-class="{1:'card_progress_single',0:'card_progress_muti'}[row.rowIndex/2%2]">
+      <div ng-repeat="pu in progressUI" ng-class="{1:'card_progress_reverse_repeat',0:'card_progress_repeat'}[row.rowIndex/2%2]"
+           ng-if="pu.progressIndex<((row.rowIndex/2+1)*5) && pu.progressIndex>=((row.rowIndex/2)*5)">
+        <progress-item ui-control="pu" direction="row.rowIndex===2"></progress-item>
+      </div>
+    </div>
+  </div>
+
+  <!--<div ng-repeat="pu in progressUI"  >-->
+    <!--<progress-item ui-control="pu" direction="row.rowIndex===2"></progress-item>-->
+  <!--</div>-->
+
+</div>

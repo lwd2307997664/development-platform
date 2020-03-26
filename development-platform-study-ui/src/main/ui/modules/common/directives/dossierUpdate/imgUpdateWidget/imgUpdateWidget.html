@@ -1,0 +1,23 @@
+<div class="img_update_widget">
+    <div class="img_update_pagination">第{{widgetData.name+1}}页</div>
+    <div class="img_update_delete"
+         ng-click="imgDelete($event)" ng-if="!isAllowDelete"></div>
+    <img ng-if="!isPdf && isLoad" ng-src="{{widget.compressed.dataURL}}"
+         class="img_selector thumbnail mar_b5p img_update_img" width="100px"
+         height="100px" ng-click="imgShow($event)"/>
+    <img ng-if="isPdf && isLoad" class="img_selector thumbnail mar_b5p img_update_img" ng-click="imgShow($event)"
+         ng-src="{{pdfImg}}"/>
+    <div ng-if="!isLoad" class="img_selector thumbnail mar_b5p img_update_img"
+         style="height: 100px;width: 100px;"></div>
+    <input class="img_update_note" ng-if="widgetData.desc.required" type="text"
+           placeholder="{{widgetData.desc.placeholder}}" ng-model="widgetData.descript">
+
+    <div style="float:left;width: 100px;" ng-show="!isView">
+        <input class="img_update_inputFile"
+               material-id="cof.index"
+               up-date="imgUpdate()" girder-image-compress2 type="file" value="文件" pdf-size="pdfSize"
+               id="{{widget.name}}" accept="image/*,application/pdf" image="widget" resize-max-height="1600"
+               resize-max-width="1600" resize-quality="0.9" resize-type="image/jpg" is-pdf="isPdf"/>
+        <span class="glyphicon glyphicon-camera img_update_camera_icon" aria-hidden="true" ng-click="openPage()"></span>
+    </div>
+</div>

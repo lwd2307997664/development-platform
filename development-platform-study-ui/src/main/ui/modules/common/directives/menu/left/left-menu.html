@@ -1,0 +1,21 @@
+<div class="fl" style="width: 126px;margin-left: 15px;">
+    <div class="panel panel-default mar_t10p border_rad6">
+        <div class="panel-body">
+            <span style="height: 25px;
+    line-height: 25px;
+    font-size: 20px;
+    background: none;
+    /* border-left: 4px solid #70aae6; */
+    padding-left: 8px;
+    color: #414141;">功能导航
+            </span>
+            <ul class="nav_levelTwo clearfix">
+                <li ng-repeat="quick in quickLaunchs track by $index" class="I_S_but "
+                    ng-click="goShortcut(quick.path)">
+                    <div ng-class="'navtwo_icon'+quick.id"></div>
+                    <span>{{quick.label}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

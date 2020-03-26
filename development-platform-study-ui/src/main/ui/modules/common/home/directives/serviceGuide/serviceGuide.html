@@ -1,0 +1,13 @@
+<div class="I_Guide I_S_width3">
+  <div class="I_S_title">
+    <div class="I_S_text">打印</div>
+  </div>
+  <div class="I_O_couple">
+    <div class="hand print_icon" ng-repeat="vd in viewDate"
+         ng-class="vd.icon"
+         ng-click="linkTurn($index)">
+      <div class="IO_text"><a ng-if="wordsView" ng-bind="vd.name"></a></div>
+    </div>
+  </div>
+
+</div>

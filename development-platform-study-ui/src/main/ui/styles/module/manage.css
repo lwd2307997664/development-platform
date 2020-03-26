@@ -1,0 +1,194 @@
+/**
+ * 内部管理样式文件
+ */
+
+/*subCompany*/
+
+.manage-panel {
+    padding: 30px 16px 20px 16px;
+    margin-top: 10px;
+}
+
+.manage-sub-companyTitle {
+    color: #4581D2 !important;
+    font-size: 24px;
+    margin-right: 24px;
+}
+
+.manage-sub-companyLine {
+    width: calc(100% + 22px);
+    height: 4px;
+    background-color: #F3F9FF;
+    border: 0;
+    margin-left: -11px;
+}
+
+.manage-sub-companyGrid {
+    width: calc(100% - 20px);
+    height: 220px;
+    margin: 10px;
+}
+
+.manage-sub-companyInfo {
+    width: 100%;
+    height: 70px;
+    color: #A1A1A1;
+}
+
+.manage-sub-companyInfo span {
+    color: #4B4B4B;
+}
+
+.manage-sub-gridTpl {
+    cursor: pointer;
+    line-height: 35px;
+}
+
+.manage-sub-companyBtn {
+    margin-right: 10px;
+    background-color: #6B96F2;
+    border-color: #5e82d3;
+    border-radius: 3px;
+}
+
+/*subCompanyEdit*/
+.manage-sub-companyEditInfo {
+    background-color: #F3F9FF;
+    width: calc(100% + 20px);
+    height: 90px;
+    color: #A1A1A1;
+    padding: 19px 0 0 40px;
+    margin-left: -10px;
+}
+
+.manage-sub-companyEditInfo span {
+    color: #4B4B4B;
+    margin-right: 50px;
+}
+
+.manage-sub-companyEditInfo > .row {
+    margin: 5px 0 0 0;
+}
+
+.manage-sub-companyEditInfo > .manage-sub-companyTitle {
+    font-size: 22px;
+}
+
+.manage-sub-companyEdit-form {
+    padding: 10px;
+}
+
+.manage-sub-companyEdit-form .row {
+    margin: 20px 0;
+}
+
+.manage-sub-companyEdit-form label {
+    font-weight: normal;
+}
+
+.manage-sub-companyEdit-tip {
+    margin: -30px 0 20px 50px;
+}
+
+.manage-sub-companyEdit-tip span {
+    width: 8px;
+    color: #FF8B00;
+    float: left;
+}
+
+.manage-sub-companyEdit-tip p {
+    float: left;
+    margin-left: 15px;
+}
+
+/*groupPerson*/
+.manage-person-companyInfo {
+    line-height: 39px;
+    margin: 10px 0 10px 20px;
+}
+
+.manage-person-companyInfo span {
+    margin-right: 30px;
+}
+
+.manage-person-tab {
+    position: absolute;
+    background: #ffffff;
+    background-image: -webkit-linear-gradient(top, #ffffff, #F0F6FF);
+    background-image: -moz-linear-gradient(top, #ffffff, #F0F6FF);
+    background-image: -ms-linear-gradient(top, #ffffff, #F0F6FF);
+    background-image: -o-linear-gradient(top, #ffffff, #F0F6FF);
+    background-image: linear-gradient(to bottom, #ffffff, #F0F6FF);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 6px 14px -4px #E0E0E0;
+    -moz-box-shadow: 3px 6px 14px -4px #E0E0E0;
+    box-shadow: 3px 6px 14px -4px #E0E0E0;
+    font-family: 微软雅黑;
+    color: #4E4E4E;
+    font-size: 15px;
+    padding: 4px 40px;
+    border: solid #F0F6FF 1px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 150px;
+}
+
+.manage-person-tab:hover, .manage-person-tabActive {
+    background: #6A98F3;
+    background-image: -webkit-linear-gradient(top, #6A98F3, #6485EB);
+    background-image: -moz-linear-gradient(top, #6A98F3, #6485EB);
+    background-image: -ms-linear-gradient(top, #6A98F3, #6485EB);
+    background-image: -o-linear-gradient(top, #6A98F3, #6485EB);
+    background-image: linear-gradient(to bottom, #6A98F3, #6485EB);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 6px 14px -4px #D5E9FE;
+    -moz-box-shadow: 3px 6px 14px -4px #D5E9FE;
+    box-shadow: 3px 6px 14px -4px #D5E9FE;
+    font-family: 微软雅黑;
+    color: #ffffff;
+    border: solid #6485EB 1px;
+    text-decoration: none;
+}
+
+.manage-person-tabActive:before {
+    left: -10px;
+    top: 50%;
+    margin-top: -6px;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 11px solid rgba(0, 0, 0, 0.1);
+    border-left: 0;
+}
+
+.manage-person-tabActive:after {
+    left: calc(50% - 5px);
+    top: 50%;
+    margin-top: 15px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 7px solid #668dee;
+    border-right: 8px solid #f7fbff;
+    border-left: 8px solid #f7fbff;
+    border-bottom: 0;
+}
+
+/*子单位合并*/
+.MS-companyMerge-progress {
+    height: 30px;
+    line-height: 30px;
+}
+
+.MS-companyMerge-progress div {
+    line-height: inherit;
+}

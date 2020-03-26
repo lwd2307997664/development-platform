@@ -1,0 +1,89 @@
+<div class="modal-header decorate-none">
+    <table style="width: 100%">
+        <tr>
+            <td align="left"><h4>请查询并选择</h4></td>
+            <td align="right">
+                <button class="glyphicon glyphicon-remove btn-primary" name="closeBtn"
+                        style="width: 18px;height:18px;border:0"
+                        data-ng-click="cancel();">
+                </button>
+            </td>
+        </tr>
+    </table>
+    <alert type='warning' ng-show="warningMsg" close="closeWaring()">{{warningMsg}}</alert>
+</div>
+<div class="modal-body decorate-none">
+    <div class="row">
+        <form class="form-horizontal" role="form">
+            <div class="row form-group" style="line-height: 35px;">
+                <div class="col-md-2">
+                    <span>个人编号</span>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" name="personNumber" ng-model="queryParam.aac999"
+                           id="personNumber"/>
+                </div>
+                <div class="col-md-2">
+                    <span>姓名</span>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" name="personName" ng-model="queryParam.aac003"
+                           id="personName"/>
+                </div>
+            </div>
+            <div class="row form-group" style="line-height: 35px;">
+                <div class="col-md-2">
+                    <span>证件号码</span>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" name="certificateNumber"
+                           ng-model="queryParam.aac147"
+                           id="certificateNumber"/>
+                </div>
+                <div class="col-md-4 col-md-offset-2">
+                    <input class="btn btn-info" style="width: 150px;float: left;" type="button" id="searchApply" value="查询"
+                           ng-click="searchApply()"/>
+                </div>
+            </div>
+        </form>
+    </div>
+    <table class="table table-bordered table-hover table-condensed table-restStyle" style="cursor: default">
+        <thead>
+        <tr class="text-center">
+            <th>个人编号</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>证件号码</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr data-ng-repeat="person in pageObject|startFrom:currentPage:pageSize|limitTo:pageSize"
+            class="{{$index%2===1?'':'table-tr-color-blueLight'}}"
+            ng-class="getSelectedClass(person)" ng-click="toggleSelection(person)">
+            <td>
+                {{ person.aac999 }}
+            </td>
+            <td>
+                {{ person.aac003 }}
+            </td>
+            <td>
+                {{ person.aac004|selectCodeName:'AAC004'}}
+            </td>
+            <td>
+                {{ person.aac002 }}
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr ng-show="totalItems>0">
+            <td colspan="6">
+                <div >
+                    <girder-pagination items-per-page="pageSize" total-items="totalItems"
+                                       ng-model="currentPage"></girder-pagination>
+                </div>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+<div class="modal-decorate"></div>

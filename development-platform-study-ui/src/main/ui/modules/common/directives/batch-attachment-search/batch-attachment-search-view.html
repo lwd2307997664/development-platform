@@ -1,0 +1,33 @@
+<form name="salaryForm" class="form-horizontal formCustomSetting normalForm">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+                        <span class="title1">材料批量上传
+                            <small class="c_red">(*注：1、请先点击【打印】按钮，确认并签字盖章作为电子材料上传；</small>
+                            <small class="c_red">2、电子材料上传成功后，如要在申报名单页查看，请先点击【刷新】按钮)</small>
+                        </span>
+        </div>
+        <div class="panel-body-box">
+            <div class=" form-group">
+                <div class="col-md-2">
+                    <label>请录入批次号</label>
+                </div>
+                <div class="col-md-4" style="padding-left: 0.5%;">
+                    <input type="text" class="form-control" ng-model="batchNumber" maxlength="150"/>
+                </div>
+                <div class="col-md-6 text_r">
+                    <button type="button" class="btn btn-white " style="width: 180px" id="saveButton"
+                            ng-click="query();">确定
+                    </button>
+                    <button type="button" class="btn btn-blue "  ng-show="(applyData&&applyData.applyId)"  style="width: 180px" id="printButton"
+                            ng-click="printPDF();">打印
+                    </button>
+                    <batch-attachment upload-url="uploadUrl" apply-data="applyData" matter="matter"></batch-attachment>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body-box">
+            <div ui-grid="batchInfo" class="grid" style="height: 200px;"
+                 ui-grid-auto-resize ui-grid-resize-columns ui-grid-pagination></div>
+        </div>
+    </div>
+</form>

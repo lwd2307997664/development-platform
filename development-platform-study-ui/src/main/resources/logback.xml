@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- 导入Springboot默认配置 -->
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    
+    <appender name="TCP" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+      <destination>162.17.64.1:5044</destination>
+      <destination>162.17.64.2:5044</destination>
+      <!-- encoder is required -->
+      <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
+  	</appender>      
+
+    <root level="WARN">
+        <appender-ref ref="TCP" />     
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>

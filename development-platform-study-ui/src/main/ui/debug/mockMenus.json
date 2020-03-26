@@ -1,0 +1,1058 @@
+[
+  {
+    "id": "enterprise1",
+    "label": "企业首页",
+    "path": "/home",
+    "index": 1,
+    "children": []
+  },
+  {
+    "id": "enterprise2",
+    "label": "业务申报",
+    "path": "/declare",
+    "index": 2,
+    "children": [
+      {
+        "id": "enterprise21",
+        "label": "单位业务",
+        "path": "/company",
+        "index": 1,
+        "children": [
+          {
+            "id": "enterprise2101",
+            "label": "单位信息变更登记申报",
+            "path": "/company/modify",
+            "index": 1,
+            "children": []
+          },
+          {
+            "id": "enterprise2102",
+            "label": "单位险种新增登记申报",
+            "path": "/company/insuranceModify",
+            "index": 2,
+            "children": []
+          },
+          {
+            "id": "enterprise2103",
+            "label": "社会保险登记证补证申报",
+            "path": "/company/socialmaking",
+            "index": 3,
+            "children": []
+          },
+          {
+            "id": "enterprise2104",
+            "label": "单位合并",
+            "path": "/company/commerge",
+            "index": 4,
+            "children": []
+          },
+          {
+            "id": "enterprise2105",
+            "label": "单位社会保险注销",
+            "path": "/company/comcancel",
+            "index": 5,
+            "children": []
+          },
+          {
+            "id": "enterprise2106",
+            "label": "单位职工工资总额申报",
+            "path": "/company/salary",
+            "index": 6,
+            "children": []
+          },
+          {
+            "id": "enterprise2107",
+            "label": "单位职工工资收入申报",
+            "path": "/company/empSalaryApply",
+            "index": 7,
+            "children": []
+          },
+          {
+            "id": "enterprise2108",
+            "label": "职工缴费基数核定确认-暂时不用",
+            "path": "/base/approvingconfirm",
+            "index": 8,
+            "children": []
+          },
+          {
+            "id": "enterprise2109",
+            "label": "参保单位社会保险登记申报",
+            "path": "/company/register",
+            "index": 9,
+            "children": []
+          },
+          {
+            "id": "enterprise2110",
+            "label": "就业安置补助申请",
+            "path": "/company/empplace",
+            "index": 10,
+            "children": []
+          },
+          {
+            "id": "enterprise2111",
+            "label": "单位统筹范围内转移申报",
+            "path": "/company/plantransfer",
+            "index": 11,
+            "children": []
+          },
+          {
+            "id": "enterprise2112",
+            "label": "单位社会保险注销（一网通办）",
+            "path": "/oneNet/oneNetComcancel",
+            "index": 12,
+            "children": []
+          },
+          {
+            "id": "enterprise2113",
+            "label": "单位信息变更登记申报（一网通办）",
+            "path": "/oneNet/oneNetComModify",
+            "index": 13,
+            "children": []
+          },
+          {
+            "id": "enterprise2114",
+            "label": "参保单位社会保险登记申报（一网通办）",
+            "path": "/oneNet/oneNetRegister",
+            "index": 14,
+            "children": []
+          },
+          {
+            "id": "enterprise2115",
+            "label": "单位职工工资核定信息导出",
+            "path": "/company/approvingExcel",
+            "index": 15,
+            "children": []
+          },
+          {
+            "id": "enterprise9114",
+            "label": "单位社会保险费缓缴申报（一网通办）",
+            "path": "/company/compostponepay",
+            "index": 16,
+            "children": []
+          },
+          {
+            "id": "enterprise2120",
+            "label": "普通稳岗补贴申请",
+            "path": "/company/steadysubsidies",
+            "index": 16,
+            "children": []
+          },
+          {
+            "id": "enterprise2121",
+            "label": "应急稳岗补贴申请",
+            "path": "/company/emergencysubsidy",
+            "index": 17,
+            "children": []
+          },
+          {
+            "id": "enterprise2122",
+            "label": "所属中小微企业备案",
+            "path": "/company/enterrecord",
+            "index": 18,
+            "children": []
+          },
+          {
+            "id": "enterprise2123",
+            "label": "中小微企业划型申报",
+            "path": "/company/divide",
+            "index": 19,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "enterprise22",
+        "label": "在职人员业务",
+        "path": "/declare/on",
+        "index": 2,
+        "children": [
+          {
+            "id": "enterprise2201",
+            "label": "增员申报",
+            "path": "/employee/register",
+            "index": 1,
+            "children": []
+          },
+          {
+            "id": "enterprise2202",
+            "label": "减员申报",
+            "path": "/employee/dimission",
+            "index": 2,
+            "children": []
+          },
+          {
+            "id": "enterprise2203",
+            "label": "人员基本信息变更申报",
+            "path": "/employee/modify",
+            "index": 3,
+            "children": []
+          },
+          {
+            "id": "enterprise2204",
+            "label": "人员特殊信息（证件）变更申报",
+            "path": "/employee/special",
+            "index": 4,
+            "children": []
+          },
+          {
+            "id": "enterprise2205",
+            "label": "个人缴费基数变更申报",
+            "path": "/paymenbase/change",
+            "index": 5,
+            "children": []
+          },
+          {
+            "id": "enterprise2206",
+            "label": "个人发放信息维护",
+            "path": "/employee/empBankUse",
+            "index": 6,
+            "children": []
+          },
+          {
+            "id": "enterprise2207",
+            "label": "个人社保缴费补收申报",
+            "path": "/employee/paycollection",
+            "index": 7,
+            "children": []
+          },
+          {
+            "id": "enterprise2208",
+            "label": "个人社会保险费补缴申报",
+            "path": "/employee/payback",
+            "index": 8,
+            "children": []
+          },
+          {
+            "id": "enterprise2209",
+            "label": "医疗保险转移联系函申请",
+            "path": "/transfer/medical",
+            "index": 9,
+            "children": []
+          },
+          {
+            "id": "enterprise2210",
+            "label": "企业养老保险转移联系函申请",
+            "path": "/transfer/pensionFor110",
+            "index": 10,
+            "children": []
+          },
+          {
+            "id": "enterprise2211",
+            "label": "机关养老保险转移联系函申请",
+            "path": "/transfer/pensionFor120",
+            "index": 11,
+            "children": []
+          },
+          {
+            "id": "enterprise2212",
+            "label": "职业年金转移联系函申请",
+            "path": "/transfer/occupation",
+            "index": 12,
+            "children": []
+          },
+          {
+            "id": "enterprise2213",
+            "label": "退休人员登记申报",
+            "path": "/employee/retire",
+            "index": 13,
+            "children": []
+          },
+          {
+            "id": "enterprise2214",
+            "label": "养老保险待遇暂停申报",
+            "path": "/employee/treatment/treatdimission",
+            "index": 14,
+            "children": []
+          },
+          {
+            "id": "enterprise2215",
+            "label": "供养亲属待遇暂停申报",
+            "path": "/employee/treatment/supportdimission",
+            "index": 15,
+            "children": []
+          },
+          {
+            "id": "enterprise2216",
+            "label": "养老保险待遇续发申报",
+            "path": "/employee/treatment/treatRenewal",
+            "index": 16,
+            "children": []
+          },
+          {
+            "id": "enterprise2217",
+            "label": "供养亲属待遇续发申报",
+            "path": "/employee/treatment/supportRenewal",
+            "index": 17,
+            "children": []
+          },
+          {
+            "id": "enterprise2218",
+            "label": "异地居住备案申报",
+            "path": "/business/offSiteRecord",
+            "index": 18,
+            "children": []
+          },
+          {
+            "id": "enterprise2220",
+            "label": "工伤信息登记申报",
+            "path": "/injury/register",
+            "index": 19,
+            "children": []
+          },
+          {
+            "id": "enterprise2221",
+            "label": "工伤信息变更申报",
+            "path": "/injury/modify",
+            "index": 20,
+            "children": []
+          },
+          {
+            "id": "enterprise2222",
+            "label": "工亡信息登记申报",
+            "path": "/injury/deathregister",
+            "index": 21,
+            "children": []
+          },
+          {
+            "id": "enterprise2223",
+            "label": "工伤供养亲属信息变更申报",
+            "path": "/injury/supportmodify",
+            "index": 22,
+            "children": []
+          },
+          {
+            "id": "enterprise2224",
+            "label": "工伤定期待遇续发申报",
+            "path": "/injury/treatRenewalApply",
+            "index": 21,
+            "children": []
+          },
+          {
+            "id": "enterprise2225",
+            "label": "小工伤医疗费用核定申报",
+            "path": "/injury/medicalAprovalApply",
+            "index": 22,
+            "children": []
+          },
+          {
+            "id": "enterprise2226",
+            "label": "工伤职工异地居住就医申请",
+            "path": "/injury/elsewhereApply",
+            "index": 22,
+            "children": []
+          },
+          {
+            "id": "enterprise2227",
+            "label": "工伤先行支付信息登记",
+            "path": "/injury/payAccountApply",
+            "index": 23,
+            "children": []
+          },
+          {
+            "id": "enterprise2228",
+            "label": "机关事业单位正式待遇申领",
+            "path": "/employee/organRetire",
+            "index": 27,
+            "children": []
+          },
+          {
+            "id": "enterprise2229",
+            "label": "机关事业单位临时待遇申领",
+            "path": "/employee/tempRetire",
+            "index": 28,
+            "children": []
+          },
+          {
+            "id": "enterprise2230",
+            "label": "退休人员补录",
+            "path": "/employee/retireRecord",
+            "index": 29,
+            "children": []
+          },
+          {
+            "id": "enterprise2231",
+            "label": "在职人员信息采集",
+            "path": "/employee/onjobempcollect",
+            "index": 30,
+            "children": []
+          },
+          {
+            "id": "enterprise2232",
+            "label": "退休人员信息采集",
+            "path": "/employee/retirecollect",
+            "index": 31,
+            "children": []
+          },
+          {
+            "id": "enterprise2233",
+            "label": "企业退休死亡申报",
+            "path": "/employee/death110",
+            "index": 32,
+            "children": []
+          },
+          {
+            "id": "enterprise2234",
+            "label": "机关退休死亡申报",
+            "path": "/employee/death120",
+            "index": 33,
+            "children": []
+          },
+          {
+            "id": "enterprise2235",
+            "label": "供养亲属基本信息变更",
+            "path": "/employee/treatment/support/modifyinfo",
+            "index": 35,
+            "children": []
+          },
+          {
+            "id": "enterprise2236",
+            "label": "供养亲属待遇发放信息维护",
+            "path": "/employee/treatment/support/bank",
+            "index": 36,
+            "children": []
+          },
+          {
+            "id": "enterprise2237",
+            "label": "军转干补贴企业申报",
+            "path": "/employee/military",
+            "index": 37,
+            "children": []
+          },
+          {
+            "id": "enterprise2238",
+            "label": "职教幼教补贴企业申报",
+            "path": "/employee/teacher",
+            "index": 38,
+            "children": []
+          },
+          {
+            "id": "enterprise2239",
+            "label": "离退休干部护理费调整",
+            "path": "/employee/retiretreatchange",
+            "index": 39,
+            "children": []
+          },
+          {
+            "id": "enterprise2240",
+            "label": "供养亲属待遇终止",
+            "path": "/employee/treatment/support/end",
+            "index": 40,
+            "children": []
+          },
+          {
+            "id": "enterprise2241",
+            "label": "养老转移信息手工录入申报",
+            "path": "/employee/persionhandin",
+            "index": 41,
+            "children": []
+          },
+          {
+            "id": "enterprise2242",
+            "label": "城镇职工基本养老保险与城乡居民基本养老保险制度联系函（一网通办）",
+            "path": "/employee/transfer/resident",
+            "index": 42,
+            "children": []
+          },
+          {
+            "id": "enterprise2243",
+            "label": "机关事业单位死亡待遇核定申报（一网通办）",
+            "path": "/employee/treatment/treatverification",
+            "index": 43,
+            "children": []
+          },
+          {
+            "id": "enterprise2244",
+            "label": "个人社会保险费退收申报（一网通办）",
+            "path": "/employee/payreturn",
+            "index": 44,
+            "children": []
+          },
+          {
+            "id": "enterprise2245",
+            "label": "企业养老保险人员待遇核定申报（一网通办）",
+            "path": "/employee/treatment/treatverificationfor110",
+            "index": 45,
+            "children": []
+          },
+          {
+            "id": "enterprise2246",
+            "label": "退休人员养老金调整申报",
+            "path": "/employee/persionadjustchangeapply",
+            "index": 46,
+            "children": []
+          },
+          {
+            "id": "enterprise2248",
+            "label": "失业保险待遇申领申报",
+            "path": "/employee/unemployment",
+            "index": 48,
+            "children": []
+          },
+          {
+            "id": "enterprise2247",
+            "label": "职业技能提升补贴申报",
+            "path": "/employee/skill",
+            "index": 47,
+            "children": []
+          },
+          {
+            "id": "enterprise2249",
+            "label": "重复领取养老金退款申报",
+            "path": "/employee/repeatreturn",
+            "index": 48,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "enterprise23",
+        "label": "退休人员业务",
+        "path": "/declare/off",
+        "index": 3,
+        "children": [
+          {
+            "id": "enterprise2301",
+            "label": "离退休人员信息修改",
+            "path": "/employee/retiremodify",
+            "index": 19,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "enterprise82",
+        "label": "一网通办业务",
+        "path": "/oneNet",
+        "index": 3,
+        "children": [
+          {
+            "id": "enterprise8201",
+            "label": "职工减员申报(一网通办)",
+            "path": "/oneNet/dimission",
+            "index": 1,
+            "children": []
+          },
+          {
+            "id": "enterprise8202",
+            "label": "养老工伤保险待遇暂停(一网通办)",
+            "path": "/oneNet/treatdimission",
+            "index": 2,
+            "children": []
+          },
+          {
+            "id": "enterprise8203",
+            "label": "在职职工信息修改(一网通办)",
+            "path": "/oneNet/oneNetEmpModify",
+            "index": 3,
+            "children": []
+          },
+          {
+            "id": "enterprise8204",
+            "label": "离退休员工信息修改(一网通办)",
+            "path": "/oneNet/oneNetRetireEmpModify",
+            "index": 4,
+            "children": []
+          },
+          {
+            "id": "enterprise8205",
+            "label": "职工增员申报(一网通办)",
+            "path": "/oneNet/oneNetEmpRegister",
+            "index": 5,
+            "children": []
+          },
+          {
+            "id": "enterprise8206",
+            "label": "退休人员待遇死亡核定(一网通办)",
+            "path": "/oneNet/oneNetTreatDeath",
+            "index": 6,
+            "children": []
+          }
+
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enterprise3",
+    "label": "申请审核",
+    "path": "/submit/agent",
+    "index": 3,
+    "children": []
+  },
+  {
+    "id": "enterprise4",
+    "label": "申请提交",
+    "path": "/submit/pending",
+    "index": 4,
+    "children": []
+  },
+  {
+    "id": "enterprise5",
+    "label": "审核结果",
+    "path": "/review/reviewed",
+    "index": 5,
+    "children": [
+      {
+        "id": "enterprise5",
+        "label": "审核进度查询",
+        "path": "/review/progress",
+        "index": 1,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "enterprise6",
+    "label": "查询打印",
+    "path": "/search",
+    "index": 6,
+    "children": [
+      {
+        "id": "enterprise61",
+        "label": "单位信息查询",
+        "path": null,
+        "index": 1,
+        "children": [
+          {
+            "id": "enterprise6107",
+            "label": "在职职工花名册",
+            "path": "/search/person/roster",
+            "index": 7,
+            "children": []
+          },
+          {
+            "id": "enterprise6120",
+            "label": "退休职工花名册",
+            "path": "/search/person/retireRoster",
+            "index": 7,
+            "children": []
+          },
+          {
+            "id": "enterprise6108",
+            "label": "单位参保信息查询",
+            "path": "/search/company/insuredInfo",
+            "index": 8,
+            "children": []
+          },
+          {
+            "id": "enterprise6109",
+            "label": "单位应缴信息查询",
+            "path": "/search/searchFor006",
+            "index": 9,
+            "children": []
+          },
+          {
+            "id": "enterprise6110",
+            "label": "单位实缴信息查询",
+            "path": "/search/searchFor007",
+            "index": 10,
+            "children": []
+          },
+          {
+            "id": "enterprise6111",
+            "label": "单位在职人员信息查询",
+            "path": "/search/company/comOnJob",
+            "index": 11,
+            "children": []
+          },
+          {
+            "id": "enterprise6112",
+            "label": "单位欠费信息查询",
+            "path": "/search/searchFor010",
+            "index": 12,
+            "children": []
+          },
+          {
+            "id": "enterprise6113",
+            "label": "单位变更信息查询",
+            "path": "/search/searchFor011",
+            "index": 13,
+            "children": []
+          },
+          {
+            "id": "enterprise6114",
+            "label": "滞后补缴计划查询",
+            "path": "/search/searchFor018",
+            "index": 14,
+            "children": []
+          },
+          {
+            "id": "enterprise6115",
+            "label": "单位征缴计划明细查询",
+            "path": "/search/searchFor023",
+            "index": 15,
+            "children": []
+          },
+          {
+            "id": "enterprise6116",
+            "label": "养老待遇支付信息查询",
+            "path": "/search/searchFor024",
+            "index": 16,
+            "children": []
+          },
+          {
+            "id": "enterprise6117",
+            "label": "企业养老死亡待遇终止明细",
+            "path": "/search/searchFor025",
+            "index": 17,
+            "children": []
+          },
+          {
+            "id": "enterprise6118",
+            "label": "机关事业单位养老保险职业年金欠费明细",
+            "path": "/search/searchFor026",
+            "index": 18,
+            "children": []
+          },
+          {
+            "id": "enterprise6119",
+            "label": "机关事业单位养老保险基本养老保险费欠费明细",
+            "path": "/search/searchFor027",
+            "index": 19,
+            "children": []
+          },
+          {
+            "id": "enterprise6315",
+            "label": "供养亲属基本信息查询",
+            "path": "/search/searchFor021",
+            "index": 14,
+            "children": []
+          },
+          {
+            "id": "enterprise6121",
+            "label": "拨付金额明细发放信息查询",
+            "path": "/search/searchFor028",
+            "index": 21,
+            "children": []
+          },
+          {
+            "id": "enterprise6122",
+            "label": "征缴计划明细发放信息查询",
+            "path": "/search/searchFor029",
+            "index": 22,
+            "children": []
+          },
+          {
+            "id": "enterprise6123",
+            "label": "出国定居拨付计划信息查询",
+            "path": "/search/searchFor030",
+            "index": 23,
+            "children": []
+          },
+          {
+            "id": "enterprise6124",
+            "label": "退休人员发放明细结算单查询",
+            "path": "/search/searchFor031",
+            "index": 24,
+            "children": []
+          },
+          {
+            "id": "enterprise6125",
+            "label": "2019年调整养老金查询",
+            "path": "/search/searchFor032",
+            "index": 25,
+            "children": []
+          },
+          {
+            "id": "enterprise6126",
+            "label": "企业在职死亡拨付明细查询",
+            "path": "/search/searchFor035",
+            "index": 26,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "enterprise62",
+        "label": "个人信息查询",
+        "path": null,
+        "index": 2,
+        "children": [
+          {
+            "id": "enterprise6205",
+            "label": "人员应缴信息查询",
+            "path": "/search/searchFor008",
+            "index": 5,
+            "children": []
+          },
+          {
+            "id": "enterprise6206",
+            "label": "个人实缴信息查询",
+            "path": "/search/searchFor009",
+            "index": 6,
+            "children": []
+          },
+          {
+            "id": "enterprise6207",
+            "label": "个人变更信息查询",
+            "path": "/search/searchFor012",
+            "index": 6,
+            "children": []
+          },
+          {
+            "id": "enterprise6208",
+            "label": "离退休人员补退信息查询",
+            "path": "/search/searchFor013",
+            "index": 7,
+            "children": []
+          },
+          {
+            "id": "enterprise6209",
+            "label": "离退休人员调整明细查询",
+            "path": "/search/searchFor014",
+            "index": 8,
+            "children": []
+          },
+          {
+            "id": "enterprise6210",
+            "label": "离退休人员定期待遇信息查询",
+            "path": "/search/searchFor015",
+            "index": 9,
+            "children": []
+          },
+          {
+            "id": "enterprise6211",
+            "label": "离退休人员发放信息查询",
+            "path": "/search/searchFor016",
+            "index": 10,
+            "children": []
+          },
+          {
+            "id": "enterprise6212",
+            "label": "离退休人员月账户信息查询",
+            "path": "/search/searchFor017",
+            "index": 11,
+            "children": []
+          },
+          {
+            "id": "enterprise6213",
+            "label": "个人基本信息查询",
+            "path": "/search/person/basicinfo",
+            "index": 12,
+            "children": []
+          },
+          {
+            "id": "enterprise6214",
+            "label": "个人转移基金到账查询",
+            "path": "/search/searchFor033",
+            "index": 12,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "enterprise63",
+        "label": "养老/工伤保险待遇查询",
+        "path": null,
+        "index": 3,
+        "children": [
+          {
+            "id": "enterprise6314",
+            "label": "离退休人员月支付明细信息查询",
+            "path": "/search/searchFor020",
+            "index": 13,
+            "children": []
+          },
+          {
+            "id": "enterprise6316",
+            "label": "供养亲属待遇信息查询",
+            "path": "/search/searchFor022",
+            "index": 15,
+            "children": []
+          },
+          {
+            "id": "enterprise6317",
+            "label": "工伤待遇明细信息查询",
+            "path": "/search/searchFor034",
+            "index": 16,
+            "children": []
+          },
+          {
+            "id": "enterprise6318",
+            "label": "重复领取养老金信息查询",
+            "path": "/search/queryRepeat",
+            "index": 17,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "enterprise64",
+        "label": "证明打印",
+        "path": "/report",
+        "index": 4,
+        "children": [
+          {
+            "id": "enterprise6404",
+            "label": "基本养老金收入证明",
+            "path": "/report/pensionproof",
+            "index": 4,
+            "children": []
+          },
+          {
+            "id": "enterprise6405",
+            "label": "个人参保缴费证明",
+            "path": "/report/personInsuredPayment",
+            "index": 5,
+            "children": []
+          },
+          {
+            "id": "enterprise6406",
+            "label": "个人权益记录单",
+            "path": "/report/personRightList",
+            "index": 6,
+            "children": []
+          },
+          {
+            "id": "enterprise6407",
+            "label": "单位参保缴费证明",
+            "path": "/report/comInsuredProof",
+            "index": 7,
+            "children": []
+          },
+          {
+            "id": "enterprise6408",
+            "label": "机关事业单位职业年金费征集通知单",
+            "path": "/report/orgPensionProof",
+            "index": 8,
+            "children": []
+          },
+          {
+            "id": "enterprise6409",
+            "label": "业务表单",
+            "path": "/review/progress",
+            "index": 9,
+            "children": []
+          },
+          {
+            "id": "enterprise6410",
+            "label": "基本养老保险缴费凭证",
+            "path": "/report/institution/certificate",
+            "index": 10,
+            "children": []
+          },
+          {
+            "id": "enterprise6411",
+            "label": "企业养老保险在职职工信息查询单",
+            "path": "/report/onJobEmpInfoQuery",
+            "index": 11,
+            "children": []
+          },
+          {
+            "id": "enterprise6412",
+            "label": "机关事业养老保险个人账户查询单",
+            "path": "/report/onJobOrganInfoQuery",
+            "index": 12,
+            "children": []
+          },
+          {
+            "id": "enterprise6413",
+            "label": "企业养老保险离退休人员信息查询单",
+            "path": "/report/retireEmpInfoQuery",
+            "index": 13,
+            "children": []
+          },
+          {
+            "id": "enterprise6414",
+            "label": "机关事业养老保险离退休人员信息查询单",
+            "path": "/report/retireOrganInfoQuery",
+            "index": 14,
+            "children": []
+          },
+          {
+            "id": "enterprise6415",
+            "label": "离退休人员基本信息表",
+            "path": "/report/retireOrganInfoListQuery",
+            "index": 15,
+            "children": []
+          },
+          {
+            "id": "enterprise6416",
+            "label": "机关事业单位退休人员工资单打印",
+            "path": "/report/retireOrganWageListQuery",
+            "index": 16,
+            "children": []
+          },
+          {
+            "id": "enterprise6417",
+            "label": "离退休人员终止待遇补打计算单",
+            "path": "/report/retireOrganTreatmentList",
+            "index": 17,
+            "children": []
+          },
+          {
+            "id": "enterprise6418",
+            "label": "2019年调整养老金花名册",
+            "path": "/report/pensionRoster",
+            "index": 18,
+            "children": []
+          },
+          {
+            "id": "enterprise6419",
+            "label": "重复领取养老金结算表单打印",
+            "path": "/report/repeatform",
+            "index": 19,
+            "children": []
+          },
+          {
+            "id": "enterprise6420",
+            "label": "重复领取养老金结算退款证明打印",
+            "path": "/report/repeatcollection",
+            "index": 20,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enterprise7",
+    "label": "内部管理",
+    "path": "/manage",
+    "index": 7,
+    "children": [
+      {
+        "id": "enterprise7101",
+        "label": "经办员管理",
+        "path": "/manage/operator",
+        "index": 1,
+        "children": []
+      },
+      {
+        "id": "enterprise7102",
+        "label": "内部单位管理",
+        "path": "/manage/subCompany",
+        "index": 2,
+        "children": []
+      },
+      {
+        "id": "enterprise7103",
+        "label": "内部单位信息修改",
+        "path": "/manage/subCompanyEdit",
+        "index": 3,
+        "children": []
+      },
+      {
+        "id": "enterprise7104",
+        "label": "操作员信息管理",
+        "path": "/manage/permissionsAllocation",
+        "index": 4,
+        "children": []
+      },
+      {
+        "id": "enterprise7105",
+        "label": "人员内部分配",
+        "path": "/manage/groupPerson",
+        "index": 5,
+        "children": []
+      },
+      {
+        "id": "enterprise7105",
+        "label": "人员内部管理",
+        "path": "/manage/groupPersonManage",
+        "index": 6,
+        "children": []
+      }
+    ]
+  }
+]

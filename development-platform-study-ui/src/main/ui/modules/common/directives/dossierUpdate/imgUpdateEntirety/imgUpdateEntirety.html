@@ -1,0 +1,9 @@
+<!--<hr width="100%">-->
+<!--<div class="row">-->
+<!--<button ng-class="{'详细': 'btn-danger', '概览': 'btn-primary'}[detailedValue]" class="fr btn  mar_r20p"-->
+<!--ng-click="detailedOperation()">{{detailedValue}}-->
+<!--</button>-->
+<!--</div>-->
+<div ng-repeat="es in viewState" class="img_update_animation_extend">
+    <img-update-material  ng-repeat="detail in materialData"  ng-if="es.index===detail.index"  is-view="isView" update-result-material="updateResultMaterial(result)"  material-detail-data="detail" extend-state="es.isExtend" extend-detail="moreAction(obj)" write-back="writeBack(materialDetailData)" web-server-url="fileWebServerUrl"></img-update-material>
+</div>

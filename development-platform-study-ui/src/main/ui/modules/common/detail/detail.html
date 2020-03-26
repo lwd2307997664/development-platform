@@ -1,0 +1,23 @@
+<div ng-controller="ApplyDetailCtrl">
+    <div class="modal-header">
+        <table style="width: 100%">
+            <tr>
+                <td align="left"><h4>{{modalOptions.headerText}}</h4></td>
+                <td align="right">
+                    <button class="glyphicon glyphicon-remove btn-primary" name="closeBtn"
+                            style="width: 18px;height:18px;border:0"
+                            data-ng-click="modalOptions.close();">
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="modal-body" id="detailContent" name="detailContent">
+        <applydetail></applydetail>
+    </div>
+    <div class="modal-footer" data-ng-show="modalOptions.submitted">
+        <div class="row">
+
+        </div>
+    </div>
+</div>

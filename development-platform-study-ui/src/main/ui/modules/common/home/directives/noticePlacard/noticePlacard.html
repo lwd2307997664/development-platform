@@ -1,0 +1,24 @@
+    <div class="padding_box">
+        <div class="I_S_title">
+            <ul ng-init='selected=0'>
+                <li class="I_S_text_tab" ng-class='{active:selected==$index}' ng-click='show($index)' ng-repeat='titleItem in title'>{{titleItem.list}}</li>
+            </ul>
+            <!--<div class="I_S_text">通知公告</div>-->
+        </div>
+        <div class="noticePlacard_con">
+            <!--<div ng-show='selected==$index' ng-repeat='showItem in notice'>{{showItem.con}}</div>-->
+            <!--<div ng-show='selected!=$index' ng-repeat='showItem in download'>{{showItem.con}}</div>-->
+            <ul ng-show='selected===0' ng-repeat='item in notice'>
+                <li>
+                    <a href="" class="news_til" data-ng-click="showAgree(item)" title="{{item.con}}">【{{item.type}}】{{item.con}}</a>
+                    <span class="news_time">{{item.time}}</span>
+                </li>
+            </ul>
+            <ul ng-show='selected===1' ng-repeat='item in download'>
+                <li>
+                    <a target="_blank" href="{{item.linkAddress}}" class="news_til" title="{{item.con}}">【{{item.type}}】{{item.con}}</a>
+                    <span class="news_time">{{item.time}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>

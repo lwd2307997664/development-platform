@@ -1,0 +1,52 @@
+<!--<div ng-init="initcheck()">-->
+    <div class="modal-header quicklaunch_modal_header">
+        <span class="fl">业务申报</span>
+        <a href="javascripte:" class="fr" data-ng-click="modalOptions.close();">X</a>
+    </div>
+    <div class="modal-body clearfix">
+        <div class="menu_configuration">
+            <div class="title"><span>系统添加</span></div>
+            <div class="menu_configuration_l mar_t10p">
+                <script type="text/ng-template" id="nodes_renderer.html">
+                    <div class="tree-node tree-node-content">
+                        <a class="btn btn-xs" ng-if="node.children && node.children.length > 0" data-nodrag
+                           ng-click="toggle(this)"><span class="glyphicon" ng-class="{'glyphicon-plus': collapsed,
+          'glyphicon-minus': !collapsed}"></span></a>
+                        <div class="til_icon" data-nodrag>
+                            <label for="{{node.id}}"><input type="checkbox" id="{{node.id}}" name="{{node.label}}"
+                                                            ng-if="node.children.length === 0"
+                                                            ng-click="checkthis($event,node.id)">{{node.label}}</label>
+                        </div>
+                        <!--<a class="pull-right btn btn-danger btn-xs" data-nodrag ng-click="remove(this)"><span-->
+                        <!--class="glyphicon glyphicon-remove"></span></a>-->
+                        <!--<a class="pull-right btn btn-primary btn-xs" data-nodrag ng-click="newSubItem(this)"-->
+                        <!--style="margin-right: 8px;"><span-->
+                        <!--class="glyphicon glyphicon-plus"></span></a>-->
+                    </div>
+                    <ol ui-tree-nodes="" ng-model="node.children" ng-class="{hidden: collapsed}">
+                        <li ng-repeat="node in node.children" ui-tree-node ng-include="'nodes_renderer.html'">
+                        </li>
+                    </ol>
+                </script>
+                <div ui-tree id="tree-root">
+                    <ol ui-tree-nodes ng-model="professions">
+                        <li ng-repeat="node in professions" ui-tree-node ng-include="'nodes_renderer.html'"></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="menu_configuration_r mar_t10p mar_l15p">
+                <div class="quicklaunch_list">
+                    <ul ng-model="quickLaunchs">
+                        <li ng-repeat="quickLaunch in quickLaunchs"  ng-class="'icon'+quickLaunch.id">
+                            <a href="javascript:">{{quickLaunch.label}}</a>
+                            <a href="javascript:" class="quickLaunch_delet"
+                               ng-click="deletecheck(quickLaunch.id)"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fr btn-group"><a href="javascript:" class="btn btn-primary" ng-click="updateQuickLaunch()">确定</a></div>
+            </div>
+        </div>
+
+    </div>
+<!--</div>-->

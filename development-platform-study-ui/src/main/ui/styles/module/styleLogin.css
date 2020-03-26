@@ -1,0 +1,271 @@
+/* CSS Document */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body.frontPage {
+    padding-top: 0px;
+}
+
+.topBar {
+    background-image: url(/images/topBarBg.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 90px;
+}
+
+.centerBar {
+    background-image: url(/images/loginCenterAreaBg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 375px;
+}
+
+.bottomBar {
+    background-image: url(/images/bottomBarBg.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 225px;
+}
+
+.bottomView {
+    background-image: url(/images/bottomView.png);
+    background-repeat: no-repeat;
+    height: 156px;
+    width: 1167px;
+    position: absolute;
+    left: 50%;
+    margin-left: -583px;
+}
+
+.sysTitleBar {
+    background-image: url(/images/sysTitle.png);
+    background-repeat: no-repeat;
+    width: 504px;
+    height: 90px;
+    margin-left: 100px;
+    display: inline-block;
+    *display: inline;
+}
+
+.topbuttonOne {
+    background-image: url(/images/operatGaid.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 149px;
+    height: 35px;
+    display: block;
+    display: inline-block;
+    *display: inline;
+
+}
+
+.topbuttonOne:hover {
+    background-image: url(/images/operatGaidOver.png);
+}
+
+.topbuttonTwo {
+    background-image: url(/images/dateNote.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 149px;
+    height: 35px;
+    display: block;
+    display: inline-block;
+    *display: inline;
+}
+
+.topbuttonTwo:hover {
+    background-image: url(/images/dateNoteOver.png);
+}
+
+.topbuttonThree {
+    background-image: url(/images/installChrome.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 149px;
+    height: 35px;
+    display: block;
+    display: inline-block;
+    *display: inline;
+
+}
+
+.topbuttonThree:hover {
+    background-image: url(/images/installChromeHover.png);
+}
+
+.loginAreaLay {
+    width: 300px;
+    height: 330px;
+    background-color: #F9FDFE;
+    position: absolute;
+    right: 180px;
+    top: 110px;
+}
+
+.outerLAPan {
+    height: 100%;
+    width: 100%;
+}
+
+.logTab {
+    width: 100%;
+    height: 39px;
+}
+
+.userLogTabSelected {
+    width: 150px;
+    height: 38px;
+    background-color: #8ABAED;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    line-height: 38px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    display: inline-block;
+    *display: inline;
+    margin: 0;
+    font-weight: bold;
+}
+
+.userLogTab {
+    width: 150px;
+    height: 38px;
+    background-color: #E6F4FF;
+    color: #8EB7E3;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    display: inline-block;
+    *display: inline;
+    margin: 0;
+    line-height: 38px;
+    font-weight: bold;
+}
+
+.userLogTab:hover {
+    background-color: #C0DCF2;
+    color: #ffffff;
+
+}
+/*登录form*/
+#loginForm{
+  margin-top: 20px;
+}
+
+/*登录input*/
+#loginForm .input-group{
+  max-width:260px;
+  margin-left:10px;
+  margin-top: 15px;
+}
+/*登录验证码录入*/
+#loginForm #captcha{
+  max-width:100px;
+  margin-right:5px
+}
+
+#loginForm #captchaImage{
+  min-width:80px;
+  max-height:34px;
+  margin-right:5px
+}
+
+/*选择下一个验证码*/
+#loginForm a{
+  font-size: 14px;
+  font-family: "微软雅黑";
+}
+
+#loginForm button{
+  font-size: 16px;
+  font-family: "微软雅黑";
+  font-weight: bold;
+  min-height:42px;
+  min-width:240px;
+  margin-top: 20px;
+}
+
+#loginForm .errorLogin {
+  margin: 10px 28px 0 28px;
+}
+
+#loginForm .errorLoginMsg{
+  float: right;
+  width: 90%;
+  color: #ff0000;
+  font-family: '微软雅黑';
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.labelInputLog {
+    font-size: 15px;
+    font-family: "微软雅黑";
+    color: #636363;
+    font-weight: normal;
+    margin-left: 26px;
+    line-height: 40px;
+}
+
+.inputTake {
+    width: 246px;
+    height: 36px;
+    border: 1px solid #d3d3d3;
+    margin-left: 26px;
+
+}
+
+.notcieFonts {
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #a3a3a3;
+    margin-left: 26px;
+    margin-right: 26px;
+    margin-top: 15px;
+}
+
+.caMoticebar {
+    background-image: url(/images/caNoticeBar.png);
+    background-repeat: no-repeat;
+    width: 247px;
+    height: 36px;
+    margin-left: 28px;
+
+}
+
+
+.loginButton {
+    background-image: url(/images/logButton.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 251px;
+    height: 46px;
+    margin-left: 26px;
+    margin-top: 15px;
+}
+
+.loginButton:hover {
+    background-image: url(/images/logButtonOver.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

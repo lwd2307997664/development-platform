@@ -1,0 +1,27 @@
+<div class="neu-tree-unit">
+    <div class="neu-tree-unit-fixed">
+        <!-------checkbox------->
+        <input type="checkbox"
+               ng-disabled="appearParentCheck? (!(unitCheckArray.length < unitMax) && !unitData.isCheck):appearParentCheck "
+               ng-if="unitCheck ==='true'" id="{{unitData.id}}"
+               ng-show="appearParentCheck? (appearParentCheck && unitData.children.length===0):!appearParentCheck"
+               ng-model="unitData.isCheck"
+               ng-click="changeCheck($event)"/>
+        <!-------子父级的icon------->
+        <span ng-if="unitData.children.length>0" stop-propagation
+              ng-class="{true:unitIcon.parentIconOpen,false:unitIcon.parentIconClose}[isExtend]"
+              aria-hidden="true" class="neu-tree-unit-parent-icon"></span>
+        <span class="{{unitIcon.childrenIcon}}" ng-if="unitData.children.length===0" aria-hidden="true"
+              style="margin:3px 3px 0 0;"></span>
+        <!-------展开符号------->
+        <span ng-show="unitData.children.length>0" class="glyphicon neu-tree-unit-expand-icon"
+              ng-class="{true:&quot;glyphicon-minus&quot;,false:&quot;glyphicon-plus&quot;}[isExtend]"
+              ng-click="isExtend=!isExtend" stop-propagation aria-hidden="true"></span>
+        <div ng-show="unitData.children.length===0" class="neu-tree-unit-noneIcon"></div>
+    </div>
+    <!-------title------->
+    <span ng-bind="unitData.name" class="neu-tree-unit-title" title="{{unitData.name}}"></span>
+    <div class="clearfix"></div>
+    <div ng-show="isExtend" ng-transclude></div>
+</div>
+

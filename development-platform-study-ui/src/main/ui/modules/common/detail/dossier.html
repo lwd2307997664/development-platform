@@ -1,0 +1,21 @@
+<div class="modal-header">
+    <table style="width: 100%">
+        <tr>
+            <td align="left"><h4>{{modalOptions.headerText}}</h4></td>
+            <td align="right">
+                <button class="glyphicon glyphicon-remove btn-primary" name="closeBtn"
+                        style="width: 18px;height:18px;border:0"
+                        data-ng-click="modalOptions.close();">
+                </button>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="panel panel-default"  ng-controller="EmpPensionTransferApplyCtrl" ng-init="showApplyDetail()">
+    <div class="panel-body">
+        <div class="panel-body" >
+            <img-update-entirety config-data="optionData" save-fun="save(obj)"></img-update-entirety>
+        </div>
+    </div>
+  <div ng-include="getContentUrl()" autoscroll="onlyRead()"></div>
+</div>
