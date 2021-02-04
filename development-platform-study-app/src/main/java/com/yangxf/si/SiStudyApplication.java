@@ -10,6 +10,7 @@
 package com.yangxf.si;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
@@ -22,7 +23,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @since 1.0.0
  */
 @SpringBootApplication
-@ComponentScan(basePackages = "com.yangxf.si")
+@ComponentScan(basePackages = {"com.yangxf.si","com.yangxf.si.modules.business"})
 public class SiStudyApplication {
     public static void main(String[] args) {
         SpringApplication.run(SiStudyApplication.class, args);

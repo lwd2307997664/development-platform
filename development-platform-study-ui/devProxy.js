@@ -43,4 +43,4 @@ var server = require('http').createServer(function (req, res) {
 });
 console.log("server start up on port 80");
 console.log("Sipub url= http://localhost:8000/#/login");
-server.listen(80);
+server.listen(8090);

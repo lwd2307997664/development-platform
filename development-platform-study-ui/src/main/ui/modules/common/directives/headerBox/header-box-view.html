@@ -25,9 +25,9 @@
         <span class="top-span" ng-bind="operator.name|textLengthSet:true:7:'...'"></span>
     </div>
     <!-- Add 测试标识  lizheng -->
-    <div ng-show="isTestFlag" style="color: #eaedf1;">
-        <div ng-class="clssStyle">测试环境</div>
-    </div>
+<!--    <div ng-show="isTestFlag" style="color: #eaedf1;">-->
+<!--        <div ng-class="clssStyle">测试环境</div>-->
+<!--    </div>-->
     <div ng-if="banner.show" class="warn_tip">
         <marquee class="txt_marquee" onmouseleave="this.start()" onmouseover="this.stop()" ng-attr-title="{{banner.notice}}" ng-bind="banner.notice"></marquee>
     </div>

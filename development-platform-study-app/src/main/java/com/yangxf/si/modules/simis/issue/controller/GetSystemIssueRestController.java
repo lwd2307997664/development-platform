@@ -1,7 +1,7 @@
 package com.yangxf.si.modules.simis.issue.controller;
 
 import com.yangxf.si.core.issue.Issue;
-import com.yangxf.si.utils.LongDateUtils;
+import com.yangxf.si.core.utils.LongDateUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

@@ -7,6 +7,13 @@
     "children": []
   },
   {
+    "id": "enterprise10",
+    "label": "学习",
+    "path": "/study1",
+    "index": 10,
+    "children": []
+  },
+  {
     "id": "enterprise2",
     "label": "业务申报",
     "path": "/declare",

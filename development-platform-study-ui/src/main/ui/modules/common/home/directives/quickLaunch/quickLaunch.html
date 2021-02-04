@@ -1,25 +1,15 @@
 <div class="I_service" ng-init="initMenu()">
     <div class="I_service_decorate"></div>
     <div class="I_S_title">
-        <!--<div class="I_S_text"><span ng-bind="professionName">业务办理</span></div>-->
         <div class="I_S_text"><span>业务办理</span></div>
     </div>
     <div class="I_S_pro">
-        <ul>
-            <li ng-repeat="quick in quickLaunchs track by $index" class="I_S_but" ng-click="goShortcut(quick.path)">
-                <div ng-class="'nav_icon'+quick.id"></div>
-                <span>{{quick.label}}</span>
-            </li>
-            <!--<li class="icon_add I_S_but" ng-click="addQuickLaunch()">-->
-                <!--<a href="javascripte:">添加</a>-->
-            <!--</li>-->
-        </ul>
-        <!--<div class="I_S_but" ng-class="{'I_S_but_b_Border':$index<5}" data-ng-repeat="quick in quickLaunchList">-->
-            <!--<div class="{{quick.pic}} hand" title="{{quick.alt}}" ng-click="goShortcut(quick.path)">{{quick.text}}</div>-->
-        <!--</div>-->
-        <!--<div class="icon_add" ng-if="$index = quick.length-1">-->
-            <!--<a href="javascripte:" ng-click="quickLaunch()">添加</a>-->
-        <!--</div>-->
+<!--        <ul>-->
+<!--            <li ng-repeat="quick in quickLaunchs track by $index" class="I_S_but" ng-click="goShortcut(quick.path)">-->
+<!--                <div ng-class="'nav_icon'+quick.id"></div>-->
+<!--                <span>{{quick.label}}</span>-->
+<!--            </li>-->
+<!--        </ul>-->
     </div>
 </div>
 

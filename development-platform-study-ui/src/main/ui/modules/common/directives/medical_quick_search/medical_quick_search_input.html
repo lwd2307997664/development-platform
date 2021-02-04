@@ -1,8 +1,0 @@
-<div class="input-group">
-    <input type="text" class="form-control" ng-model="medicalNumber"
-           ng-keydown="($event.which === 13)?search(medicalNumber):''"  ng-blur="search(medicalNumber)" ng-disabled="!isEnter"/>
-    <span class="input-group-btn">
-            <button type="button" class="btn btn-default" ng-disabled="!isEnable" ng-click="showMedicalOrgQuickSearch()">
-                <i class="glyphicon glyphicon-search"></i></button>
-        </span>
-</div>

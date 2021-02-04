@@ -1,7 +1,7 @@
 package com.yangxf.si.core.issue;
 
 
-import com.yangxf.si.utils.LongDateUtils;
+import com.yangxf.si.core.utils.LongDateUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
