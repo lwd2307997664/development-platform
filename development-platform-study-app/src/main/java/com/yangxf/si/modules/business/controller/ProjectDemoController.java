@@ -33,6 +33,7 @@ public class ProjectDemoController {
 
     @GetMapping("/demo")
     public String hello() {
+        log.info("demo！");
         ProjectDemo projectDemo=new ProjectDemo();
         projectDemo.setName("linwd");
         projectDemo.setIdNumber("110101198001010037");
