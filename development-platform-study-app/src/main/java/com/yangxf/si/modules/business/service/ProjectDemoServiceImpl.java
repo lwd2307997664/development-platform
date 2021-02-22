@@ -1,5 +1,7 @@
 package com.yangxf.si.modules.business.service;
 
+import com.yangxf.si.core.jpa.nativequery.NativeQueryResultsMapper;
+import com.yangxf.si.modules.business.controller.ProjectDemoDTO;
 import com.yangxf.si.modules.business.entity.ProjectDemo;
 import com.yangxf.si.modules.business.entity.ProjectDemoRepository;
 import org.hibernate.SQLQuery;
@@ -42,14 +44,15 @@ public class ProjectDemoServiceImpl implements ProjectDemoService {
      * @return
      */
     @Override
-    public List <ProjectDemo> queryMaster(String name, String idNumber) {
+    public List <ProjectDemoDTO> queryMaster(String name, String idNumber) {
         StringBuilder sql = new StringBuilder();
         sql.append("select * from PROJECT_DEMO where name=:name and id_Number=:idNumber ");
         Query p = entityManager.createNativeQuery(sql.toString());
         p.setParameter("name", name);
         p.setParameter("idNumber", idNumber);
         p.unwrap(SQLQuery.class).setResultTransformer(Transformers.ALIAS_TO_ENTITY_MAP);
-        List <ProjectDemo> list = p.getResultList();
+        @SuppressWarnings("unchecked")
+        List <ProjectDemoDTO> list = NativeQueryResultsMapper.map(p.getResultList(), ProjectDemoDTO.class);
         return list;
     }
 
@@ -60,14 +63,15 @@ public class ProjectDemoServiceImpl implements ProjectDemoService {
      * @return
      */
     @Override
-    public List <ProjectDemo> querySecondary(String name, String idNumber) {
+    public List <ProjectDemoDTO> querySecondary(String name, String idNumber) {
         StringBuilder sql = new StringBuilder();
         sql.append("select * from PROJECT_DEMO where name=:name and id_Number=:idNumber ");
         Query p = entityManagerSecondary.createNativeQuery(sql.toString());
         p.setParameter("name", name);
         p.setParameter("idNumber", idNumber);
         p.unwrap(SQLQuery.class).setResultTransformer(Transformers.ALIAS_TO_ENTITY_MAP);
-        List <ProjectDemo> list = p.getResultList();
+        @SuppressWarnings("unchecked")
+        List <ProjectDemoDTO> list = NativeQueryResultsMapper.map(p.getResultList(), ProjectDemoDTO.class);
         return list;
     }
 

@@ -9,8 +9,11 @@
  */
 package com.yangxf.si.modules.business.controller;
 
+import com.yangxf.si.core.jpa.nativequery.NativeQueryResultColumn;
+import com.yangxf.si.core.jpa.nativequery.NativeQueryResultEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 〈一句话功能简述〉<br> 
@@ -21,15 +24,20 @@ import lombok.Data;
  * @since 1.0.0
  */
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
+@NativeQueryResultEntity
 public class ProjectDemoDTO {
 
+    @NativeQueryResultColumn(value = "ID")
+    private String id;
+    @NativeQueryResultColumn(value = "NAME")
     private String name;
-
+    @NativeQueryResultColumn(value = "ID_NUMBER")
     private String idNumber;
-
+    @NativeQueryResultColumn(value = "SEX")
     private String sex;
-
+    @NativeQueryResultColumn(value = "BIRTHDAY")
     private Long birthday;
 
 }

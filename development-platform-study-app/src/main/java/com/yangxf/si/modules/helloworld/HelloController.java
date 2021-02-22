@@ -10,6 +10,7 @@
 package com.yangxf.si.modules.helloworld;
 
 import com.yangxf.si.modules.business.service.ProjectDemoService;
+import lombok.extern.log4j.Log4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,15 +27,16 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 1.0.0
  */
 @RestController
+@Log4j
 public class HelloController {
 
-    protected static Logger LOGGER = LoggerFactory.getLogger(HelloController.class);
 
     @Autowired
     private ProjectDemoService projectDemoService;
 
     @GetMapping("/hello")
     public String hello() {
+        log.info("Hello world");
         return "Hello world";
     }
 }

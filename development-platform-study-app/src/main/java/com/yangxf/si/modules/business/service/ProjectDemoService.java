@@ -1,6 +1,7 @@
 package com.yangxf.si.modules.business.service;
 
 
+import com.yangxf.si.modules.business.controller.ProjectDemoDTO;
 import com.yangxf.si.modules.business.entity.ProjectDemo;
 
 import java.util.List;
@@ -19,9 +20,9 @@ public interface ProjectDemoService {
 
 
     /**查询主数据源*/
-    List <ProjectDemo> queryMaster(String name,String idNumber);
+    List <ProjectDemoDTO> queryMaster(String name, String idNumber);
 
 
     /**查询第二数据源*/
-    List <ProjectDemo> querySecondary(String name,String idNumber);
+    List <ProjectDemoDTO> querySecondary(String name,String idNumber);
 }

@@ -65,6 +65,7 @@
         <commons-lang3.version>3.3.2</commons-lang3.version>
         <log4j.version>1.2.17</log4j.version>
         <devtools.version>2.3.5.RELEASE</devtools.version>
+        <commons-beanutils.version>1.9.3</commons-beanutils.version>
     </properties>
 
     <!-- 项目依赖定义 -->
@@ -188,6 +189,11 @@
                 <version>${log4j.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>${commons-beanutils.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
