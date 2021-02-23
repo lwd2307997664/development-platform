@@ -1,6 +1,6 @@
 ///**
 // * FileName: MyCorsFilter
-// * Author:   Administrator
+// * Author:   Administrator1
 // * Date:     2021/2/22 16:54
 // * Description: 过滤器完成跨域设置
 // * History:
