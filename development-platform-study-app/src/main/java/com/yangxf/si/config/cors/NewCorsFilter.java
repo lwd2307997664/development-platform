@@ -18,7 +18,7 @@ import org.springframework.web.filter.CorsFilter;
 
 /**
  * 〈一句话功能简述〉<br>
- * 〈返回新的 CorsFilter〉
+ * 〈返回新的 CorsFilter1〉
  *
  * @author Administrator
  * @create 2021/2/23
