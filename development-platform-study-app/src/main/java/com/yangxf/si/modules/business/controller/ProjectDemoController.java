@@ -15,8 +15,6 @@ import com.yangxf.si.modules.business.entity.ProjectDemo;
 import com.yangxf.si.modules.business.service.ProjectDemoService;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController;
-import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -60,4 +58,5 @@ public class ProjectDemoController {
     public void exception() {
        throw new ResourceNotFoundException("抛出异常");
     }
+
 }

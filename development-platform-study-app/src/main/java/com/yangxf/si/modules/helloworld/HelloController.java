@@ -31,9 +31,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
 
-    @Autowired
-    private ProjectDemoService projectDemoService;
-
     @GetMapping("/hello")
     public String hello() {
         log.info("Hello world");

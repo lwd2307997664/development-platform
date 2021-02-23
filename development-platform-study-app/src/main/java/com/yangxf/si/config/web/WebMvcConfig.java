@@ -9,15 +9,12 @@
  */
 package com.yangxf.si.config.web;
 
-import com.yangxf.si.modules.interceptor.BusiInterceptor;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈自定义静态资源策略〉
  *
  * @author Adminstrator
@@ -27,13 +24,14 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {
 
-    @Bean
-    public BusiInterceptor getBusiInterceptor(){
-        return  new BusiInterceptor();
-    }
+//    @Bean
+//    public BusiInterceptor getBusiInterceptor(){
+//        return  new BusiInterceptor();
+//    }
 
     /**
      * 自定义资源映射
+     *
      * @param registry
      */
     @Override
@@ -41,12 +39,14 @@ public class WebMvcConfig implements WebMvcConfigurer {
         registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
     }
 
-    /**
-     * 业务拦截器
-     * @param registry
-     */
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(this.getBusiInterceptor()).addPathPatterns("/hello","/**");
-    }
+//    /**
+//     * 业务拦截器
+//     * @param registry
+//     */
+//    @Override
+//    public void addInterceptors(InterceptorRegistry registry) {
+//        registry.addInterceptor(this.getBusiInterceptor()).addPathPatterns("/demo,/business/**");
+////        registry.addInterceptor(this.getBusiInterceptor()).addPathPatterns("/**");
+//
+//    }
 }
