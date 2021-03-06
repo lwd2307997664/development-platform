@@ -59,7 +59,7 @@
     "angular-ui-date": "0.0.8",
     "angular-ui-grid": "^4.0.8",
     "angular-ui-mask": "1.4.7",
-    "bootstrap": "3.3.7",
+    "bootstrap": "4.4.1",
     "exif-js": "^2.3.0",
     "girder-ui": "^1.1.6",
     "hawk": "1.1.1",
