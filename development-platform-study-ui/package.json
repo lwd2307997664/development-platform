@@ -44,7 +44,7 @@
     "proxy": "node devProxy.js"
   },
   "dependencies": {
-    "angular": "1.4.7",
+    "angular": "1.8.0",
     "angular-animate": "1.4.7",
     "angular-bootstrap": "1.0.0",
     "angular-bootstrap-nav-tree": "0.2.0",
