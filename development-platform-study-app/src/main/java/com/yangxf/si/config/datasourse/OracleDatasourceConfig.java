@@ -40,7 +40,7 @@ import java.util.Properties;
 public class OracleDatasourceConfig {
 
     // oracle扫描路径
-    static final String PACKAGE = "com.yangxf.si.modules.business";
+    static final String PACKAGE = "com.yangxf.si";
 
     @Primary
     @Bean(name = "oracleDataSource")
