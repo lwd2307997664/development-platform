@@ -63,7 +63,7 @@
     "exif-js": "^2.3.0",
     "girder-ui": "^1.1.6",
     "hawk": "1.1.1",
-    "jquery": "2.1.4",
+    "jquery": "3.5.0",
     "jszip": "3.1.5",
     "moment": "2.22.2",
     "ui-select": "0.13.2"
