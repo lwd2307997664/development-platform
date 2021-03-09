@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
  * @author lin.wd
  */
 @Repository
-public interface LogPreOptRepository
-        extends JpaRepository<LogPreOpt, String>, JpaSpecificationExecutor<LogPreOpt> {
+public interface SysLogOptRepository
+        extends JpaRepository<SysLogOpt, String>, JpaSpecificationExecutor<SysLogOpt> {
 
 }
