@@ -38,7 +38,7 @@
         <spring-cloud.version>Hoxton.SR9</spring-cloud.version>
         <ojdbc.version>12.1.0.1.0</ojdbc.version>
         <mysql.version>8.0.14</mysql.version>
-        <commons-io.version>2.4</commons-io.version>
+        <commons-io.version>2.7</commons-io.version>
         <!--报表 -->
         <barbecue.version>1.5-beta1</barbecue.version>
         <!-- 测试支持 -->
