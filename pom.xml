@@ -53,7 +53,7 @@
         <xmlworker.version>1.2.1</xmlworker.version>
         <itext-asian.version>5.2.0</itext-asian.version>
         <!-- excel导出/文件上传 -->
-        <poi.version>3.9</poi.version>
+        <poi.version>4.1.1</poi.version>
         <!-- api文档支持 -->
         <io.springfox.verson>2.6.0</io.springfox.verson>
         <!-- fastdfs 版本 -->
